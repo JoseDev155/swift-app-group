@@ -1,3 +1,10 @@
+//
+//  HabitsListViewModel.swift
+//  DailyHabitTracker
+//
+//  Created by Jose Ramos on 6/4/26.
+//
+
 import Foundation
 
 final class HabitsListViewModel {
@@ -19,6 +26,21 @@ final class HabitsListViewModel {
 
     func isCompleted(at index: Int) -> Bool {
         store.isCompleted(habits[index], on: dateProvider())
+    }
+
+    @discardableResult
+    func addHabit(title: String, detail: String) -> Habit {
+        store.addHabit(title: title, detail: detail)
+    }
+
+    func updateHabit(at index: Int, title: String, detail: String) {
+        let habit = habits[index]
+        store.updateHabit(id: habit.id, title: title, detail: detail)
+    }
+
+    func deleteHabit(at index: Int) {
+        let habit = habits[index]
+        store.deleteHabit(id: habit.id)
     }
 
     @discardableResult

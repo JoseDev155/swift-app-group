@@ -1,3 +1,10 @@
+//
+//  StatsViewController.swift
+//  DailyHabitTracker
+//
+//  Created by Jose Ramos on 6/4/26.
+//
+
 import UIKit
 
 final class StatsViewController: UIViewController {
@@ -33,12 +40,19 @@ final class StatsViewController: UIViewController {
             name: HabitNotifications.completionDidChange,
             object: nil
         )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleCompletionDidChange),
+            name: HabitNotifications.habitsDidChange,
+            object: nil
+        )
         updateUI(animated: false)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self, name: HabitNotifications.completionDidChange, object: nil)
+        NotificationCenter.default.removeObserver(self, name: HabitNotifications.habitsDidChange, object: nil)
     }
 
     @objc private func handleCompletionDidChange() {

@@ -1,3 +1,10 @@
+//
+//  HabitStore.swift
+//  DailyHabitTracker
+//
+//  Created by Jose Ramos on 6/4/26.
+//
+
 import Foundation
 
 protocol HabitStoreProtocol {
@@ -5,6 +12,9 @@ protocol HabitStoreProtocol {
     func isCompleted(_ habit: Habit, on date: Date) -> Bool
     func setCompleted(_ completed: Bool, for habit: Habit, on date: Date)
     func completionSummary(on date: Date) -> (completed: Int, total: Int)
+    func addHabit(title: String, detail: String) -> Habit
+    func updateHabit(id: String, title: String, detail: String)
+    func deleteHabit(id: String)
 }
 
 final class HabitStore: HabitStoreProtocol {
@@ -12,17 +22,13 @@ final class HabitStore: HabitStoreProtocol {
 
     private let defaults: UserDefaults
     private let completionKey = "HabitCompletionByDate"
+    private static let habitsKey = "HabitsList"
 
-    let habits: [Habit] = [
-        Habit(id: "drink_water", title: "Beber agua", detail: "8 vasos"),
-        Habit(id: "walk_steps", title: "Caminar", detail: "6000 pasos"),
-        Habit(id: "read_pages", title: "Leer", detail: "15 paginas"),
-        Habit(id: "sleep_hours", title: "Dormir", detail: "7 horas"),
-        Habit(id: "stretch", title: "Estirar", detail: "5 minutos")
-    ]
+    private(set) var habits: [Habit]
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
+        self.habits = HabitStore.loadHabits(defaults: defaults)
     }
 
     func isCompleted(_ habit: Habit, on date: Date) -> Bool {
@@ -49,6 +55,29 @@ final class HabitStore: HabitStoreProtocol {
         return (completedCount, habits.count)
     }
 
+    func addHabit(title: String, detail: String) -> Habit {
+        let habit = Habit(id: UUID().uuidString, title: title, detail: detail)
+        habits.append(habit)
+        saveHabits()
+        notifyHabitsChanged()
+        return habit
+    }
+
+    func updateHabit(id: String, title: String, detail: String) {
+        guard let index = habits.firstIndex(where: { $0.id == id }) else { return }
+        habits[index] = Habit(id: id, title: title, detail: detail)
+        saveHabits()
+        notifyHabitsChanged()
+    }
+
+    func deleteHabit(id: String) {
+        guard let index = habits.firstIndex(where: { $0.id == id }) else { return }
+        habits.remove(at: index)
+        removeCompletion(for: id)
+        saveHabits()
+        notifyHabitsChanged()
+    }
+
     private func completionByDate() -> [String: [String: Bool]] {
         let raw = defaults.dictionary(forKey: completionKey) ?? [:]
         var result: [String: [String: Bool]] = [:]
@@ -64,6 +93,33 @@ final class HabitStore: HabitStoreProtocol {
         defaults.set(data, forKey: completionKey)
     }
 
+    private func removeCompletion(for habitId: String) {
+        var allCompletion = completionByDate()
+        for (dateKey, value) in allCompletion {
+            var dayCompletion = value
+            dayCompletion.removeValue(forKey: habitId)
+            allCompletion[dateKey] = dayCompletion
+        }
+        saveCompletion(allCompletion)
+    }
+
+    private func notifyHabitsChanged() {
+        NotificationCenter.default.post(name: HabitNotifications.habitsDidChange, object: nil)
+    }
+
+    private func saveHabits() {
+        guard let data = try? JSONEncoder().encode(habits) else { return }
+        defaults.set(data, forKey: HabitStore.habitsKey)
+    }
+
+    private static func loadHabits(defaults: UserDefaults) -> [Habit] {
+        if let data = defaults.data(forKey: HabitStore.habitsKey),
+           let stored = try? JSONDecoder().decode([Habit].self, from: data) {
+            return stored
+        }
+        return defaultHabits
+    }
+
     private func dateKey(for date: Date) -> String {
         HabitStore.dateFormatter.string(from: date)
     }
@@ -74,4 +130,9 @@ final class HabitStore: HabitStoreProtocol {
         formatter.dateFormat = "yyyy-MM-dd"
         return formatter
     }()
+
+    private static let defaultHabits: [Habit] = [
+        Habit(id: "example1", title: "Ejemplo 1", detail: "Soy un hábito diario por defecto, no me borres por favor :("),
+        Habit(id: "example2", title: "Caminar", detail: "6000 pasos")
+    ]
 }

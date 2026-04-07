@@ -1,3 +1,10 @@
+//
+//  CheckmarkView.swift
+//  DailyHabitTracker
+//
+//  Created by Jose Ramos on 6/4/26.
+//
+
 import UIKit
 
 final class CheckmarkView: UIView {
