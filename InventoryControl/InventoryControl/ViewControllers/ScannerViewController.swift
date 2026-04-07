@@ -86,6 +86,17 @@ final class ScannerViewController: UIViewController {
     }
 
     @objc private func scanTapped() {
+        switch viewModel.scanAvailability() {
+        case .noInventory:
+            presentStatusAlert(title: "Sin productos", message: "Aún no hay productos registrados en el inventario.")
+            return
+        case .noStock:
+            presentStatusAlert(title: "Stock agotado", message: "Hay productos registrados, pero todos tienen stock 0.")
+            return
+        case .available:
+            break
+        }
+
         let alert = UIAlertController(title: "Escaneo rápido", message: "Puedes cambiar el nombre si lo deseas.", preferredStyle: .alert)
         alert.addTextField { textField in
             textField.placeholder = "Nombre del producto"
@@ -94,13 +105,22 @@ final class ScannerViewController: UIViewController {
         let confirmAction = UIAlertAction(title: "Agregar", style: .default) { [weak self] _ in
             guard let self = self else { return }
             let nameText = alert.textFields?.first?.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-            let item = self.viewModel.simulateScan(customName: nameText)
+            guard let item = self.viewModel.simulateScan(customName: nameText) else {
+                self.presentStatusAlert(title: "Escaneo no disponible", message: "No hay pasillos válidos para registrar el producto.")
+                return
+            }
             self.updateInfo(text: "Agregado: \(item.name) en pasillo \(item.aisle)")
             self.animateCard()
         }
 
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel))
         alert.addAction(confirmAction)
+        present(alert, animated: true)
+    }
+
+    private func presentStatusAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Entendido", style: .default))
         present(alert, animated: true)
     }
 

@@ -7,6 +7,12 @@
 
 import Foundation
 
+enum ScanAvailability {
+    case available
+    case noInventory
+    case noStock
+}
+
 final class ScannerViewModel {
     private let store: InventoryStoreProtocol
 
@@ -14,14 +20,30 @@ final class ScannerViewModel {
         self.store = store
     }
 
-    func simulateScan(customName: String?) -> InventoryItem {
+    func scanAvailability() -> ScanAvailability {
+        if store.items.isEmpty {
+            return .noInventory
+        }
+
+        if store.items.allSatisfy({ $0.stock == 0 }) {
+            return .noStock
+        }
+
+        return .available
+    }
+
+    func simulateScan(customName: String?) -> InventoryItem? {
         let names = ["Cajas", "Bebidas", "Detergente", "Café", "Galletas", "Cuadernos", "Papel", "Lámparas"]
-        let aisles = ["A", "B", "C", "D"]
-        let sections = ["1", "2", "3"]
+        let aisles = Array(Set(store.items.map { $0.aisle })).sorted()
+
+        guard let aisle = aisles.randomElement() else {
+            return nil
+        }
+
+        let sections = Array(Set(store.items.filter { $0.aisle == aisle }.map { $0.section })).sorted()
+        let section = sections.randomElement() ?? "1"
 
         let name = (customName?.isEmpty == false ? customName! : names.randomElement()!)
-        let aisle = aisles.randomElement()!
-        let section = sections.randomElement()!
         let stock = Int.random(in: 1...20)
         let minStock = max(1, store.profile.defaultMinStock)
 
