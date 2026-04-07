@@ -22,7 +22,7 @@ final class MoviesListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Peliculas"
+        title = "Películas"
         view.backgroundColor = .systemBackground
         navigationItem.largeTitleDisplayMode = .always
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addMovie))
@@ -79,24 +79,24 @@ final class MoviesListViewController: UIViewController {
 
         switch context {
         case .new:
-            title = "Nueva pelicula"
+            title = "Nueva película"
             movie = nil
         case .edit(let current):
-            title = "Editar pelicula"
+            title = "Editar película"
             movie = current
         }
 
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         alert.addTextField { textField in
-            textField.placeholder = "Titulo"
+            textField.placeholder = "Título"
             textField.text = movie?.title
         }
         alert.addTextField { textField in
-            textField.placeholder = "Genero (Accion, Drama, Comedia, Terror)"
+            textField.placeholder = "Género (Acción, Drama, Comedia, Terror)"
             textField.text = movie?.genre.title
         }
         alert.addTextField { textField in
-            textField.placeholder = "Anio"
+            textField.placeholder = "Año"
             textField.keyboardType = .numberPad
             if let movie = movie {
                 textField.text = "\(movie.year)"
@@ -120,17 +120,17 @@ final class MoviesListViewController: UIViewController {
             let noteText = alert.textFields?.last?.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 
             guard !titleText.isEmpty else {
-                self.presentValidationAlert(message: "Ingresa un titulo valido.")
+                self.presentValidationAlert(message: "Ingresa un título válido.")
                 return
             }
 
             guard let genre = MovieGenre.fromInput(genreText) else {
-                self.presentValidationAlert(message: "Selecciona un genero valido.")
+                self.presentValidationAlert(message: "Selecciona un género válido.")
                 return
             }
 
             guard let year = Int(yearText), year >= 1900, year <= 2100 else {
-                self.presentValidationAlert(message: "Ingresa un anio valido.")
+                self.presentValidationAlert(message: "Ingresa un año válido.")
                 return
             }
 
@@ -151,7 +151,7 @@ final class MoviesListViewController: UIViewController {
     private func confirmDelete(at indexPath: IndexPath) {
         let movie = viewModel.movie(at: indexPath.row)
         let alert = UIAlertController(
-            title: "Eliminar pelicula",
+            title: "Eliminar película",
             message: "Deseas eliminar \"\(movie.title)\"?",
             preferredStyle: .alert
         )
@@ -177,7 +177,7 @@ final class MoviesListViewController: UIViewController {
     }
 
     private func presentValidationAlert(message: String) {
-        let alert = UIAlertController(title: "Datos invalidos", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Datos inválidos", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Entendido", style: .default))
         present(alert, animated: true)
     }

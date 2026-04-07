@@ -25,26 +25,26 @@ final class MovieSettingsViewModel {
     func genreSummaryText() -> String {
         let summary = store.moviesByGenreCount()
         guard !summary.isEmpty else {
-            return "Generos: sin registros."
+            return "Géneros: sin registros."
         }
 
         let lines = summary
             .sorted { $0.value > $1.value }
             .map { "\($0.key.title): \($0.value)" }
 
-        return "Generos:\n" + lines.joined(separator: "\n")
+        return "Géneros:\n" + lines.joined(separator: "\n")
     }
 
     func yearSummaryText() -> String {
         let summary = store.moviesByYearCount()
         guard !summary.isEmpty else {
-            return "Por anio: sin registros."
+            return "Por año: sin registros."
         }
 
         let lines = summary
             .sorted { $0.key > $1.key }
             .map { "\($0.key): \($0.value)" }
 
-        return "Por anio:\n" + lines.joined(separator: "\n")
+        return "Por año:\n" + lines.joined(separator: "\n")
     }
 }
