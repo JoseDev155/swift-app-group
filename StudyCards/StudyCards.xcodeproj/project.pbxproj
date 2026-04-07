@@ -13,6 +13,16 @@
 		F2FD01072F85B74A00390151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD01052F85B74A00390151 /* Main.storyboard */; };
 		F2FD01092F85B74D00390151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FD01082F85B74D00390151 /* Assets.xcassets */; };
 		F2FD010C2F85B74D00390151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD010A2F85B74D00390151 /* LaunchScreen.storyboard */; };
+		A3C000012F86CC0000000001 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B100012F86CC0000000001 /* RootTabBarController.swift */; };
+		A3C000022F86CC0000000002 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B100022F86CC0000000002 /* Flashcard.swift */; };
+		A3C000032F86CC0000000003 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B100032F86CC0000000003 /* Notifications.swift */; };
+		A3C000042F86CC0000000004 /* StudyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B100042F86CC0000000004 /* StudyStore.swift */; };
+		A3C000052F86CC0000000005 /* CardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B100052F86CC0000000005 /* CardsListViewModel.swift */; };
+		A3C000062F86CC0000000006 /* StudyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B100062F86CC0000000006 /* StudyViewModel.swift */; };
+		A3C000072F86CC0000000007 /* CardFlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B100072F86CC0000000007 /* CardFlipView.swift */; };
+		A3C000082F86CC0000000008 /* FlashcardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B100082F86CC0000000008 /* FlashcardCell.swift */; };
+		A3C000092F86CC0000000009 /* CardsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B100092F86CC0000000009 /* CardsListViewController.swift */; };
+		A3C0000A2F86CC000000000A /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B1000A2F86CC000000000A /* StudyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		F2FD01082F85B74D00390151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2FD010B2F85B74D00390151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2FD010D2F85B74D00390151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B100012F86CC0000000001 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		A3B100022F86CC0000000002 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		A3B100032F86CC0000000003 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		A3B100042F86CC0000000004 /* StudyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyStore.swift; sourceTree = "<group>"; };
+		A3B100052F86CC0000000005 /* CardsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListViewModel.swift; sourceTree = "<group>"; };
+		A3B100062F86CC0000000006 /* StudyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewModel.swift; sourceTree = "<group>"; };
+		A3B100072F86CC0000000007 /* CardFlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFlipView.swift; sourceTree = "<group>"; };
+		A3B100082F86CC0000000008 /* FlashcardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardCell.swift; sourceTree = "<group>"; };
+		A3B100092F86CC0000000009 /* CardsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListViewController.swift; sourceTree = "<group>"; };
+		A3B1000A2F86CC000000000A /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,12 @@
 		F2FD00FE2F85B74A00390151 /* StudyCards */ = {
 			isa = PBXGroup;
 			children = (
+				A3D200012F86CC0000000001 /* App */,
+				A3D200022F86CC0000000002 /* Models */,
+				A3D200032F86CC0000000003 /* Services */,
+				A3D200042F86CC0000000004 /* ViewModels */,
+				A3D200052F86CC0000000005 /* Views */,
+				A3D200062F86CC0000000006 /* ViewControllers */,
 				F2FD00FF2F85B74A00390151 /* AppDelegate.swift */,
 				F2FD01012F85B74A00390151 /* SceneDelegate.swift */,
 				F2FD01032F85B74A00390151 /* ViewController.swift */,
@@ -65,6 +91,58 @@
 				F2FD010D2F85B74D00390151 /* Info.plist */,
 			);
 			path = StudyCards;
+			sourceTree = "<group>";
+		};
+		A3D200012F86CC0000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A3B100012F86CC0000000001 /* RootTabBarController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A3D200022F86CC0000000002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3B100022F86CC0000000002 /* Flashcard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3D200032F86CC0000000003 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A3B100042F86CC0000000004 /* StudyStore.swift */,
+				A3B100032F86CC0000000003 /* Notifications.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A3D200042F86CC0000000004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A3B100052F86CC0000000005 /* CardsListViewModel.swift */,
+				A3B100062F86CC0000000006 /* StudyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A3D200052F86CC0000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3B100072F86CC0000000007 /* CardFlipView.swift */,
+				A3B100082F86CC0000000008 /* FlashcardCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3D200062F86CC0000000006 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3B100092F86CC0000000009 /* CardsListViewController.swift */,
+				A3B1000A2F86CC000000000A /* StudyViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C000012F86CC0000000001 /* RootTabBarController.swift in Sources */,
+				A3C000092F86CC0000000009 /* CardsListViewController.swift in Sources */,
+				A3C0000A2F86CC000000000A /* StudyViewController.swift in Sources */,
+				A3C000072F86CC0000000007 /* CardFlipView.swift in Sources */,
+				A3C000082F86CC0000000008 /* FlashcardCell.swift in Sources */,
+				A3C000052F86CC0000000005 /* CardsListViewModel.swift in Sources */,
+				A3C000062F86CC0000000006 /* StudyViewModel.swift in Sources */,
+				A3C000022F86CC0000000002 /* Flashcard.swift in Sources */,
+				A3C000042F86CC0000000004 /* StudyStore.swift in Sources */,
+				A3C000032F86CC0000000003 /* Notifications.swift in Sources */,
 				F2FD01042F85B74A00390151 /* ViewController.swift in Sources */,
 				F2FD01002F85B74A00390151 /* AppDelegate.swift in Sources */,
 				F2FD01022F85B74A00390151 /* SceneDelegate.swift in Sources */,
@@ -293,7 +381,6 @@
 				INFOPLIST_FILE = StudyCards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +407,6 @@
 				INFOPLIST_FILE = StudyCards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
