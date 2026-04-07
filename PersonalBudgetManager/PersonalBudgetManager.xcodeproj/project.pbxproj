@@ -13,16 +13,16 @@
 		F2FD00932F84F0DE00390151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD00912F84F0DE00390151 /* Main.storyboard */; };
 		F2FD00952F84F0E000390151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FD00942F84F0E000390151 /* Assets.xcassets */; };
 		F2FD00982F84F0E000390151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD00962F84F0E000390151 /* LaunchScreen.storyboard */; };
-		F3B000012F84F0DE00390151 /* BudgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100012F84F0DE00390151 /* BudgetEntry.swift */; };
-		F3B000022F84F0DE00390151 /* BudgetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100022F84F0DE00390151 /* BudgetStore.swift */; };
-		F3B000032F84F0DE00390151 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100032F84F0DE00390151 /* Notifications.swift */; };
-		F3B000042F84F0DE00390151 /* BudgetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100042F84F0DE00390151 /* BudgetListViewModel.swift */; };
-		F3B000052F84F0DE00390151 /* ReportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100052F84F0DE00390151 /* ReportsViewModel.swift */; };
-		F3B000062F84F0DE00390151 /* LimitWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100062F84F0DE00390151 /* LimitWarningView.swift */; };
-		F3B000072F84F0DE00390151 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100072F84F0DE00390151 /* EntryCell.swift */; };
-		F3B000082F84F0DE00390151 /* BudgetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100082F84F0DE00390151 /* BudgetListViewController.swift */; };
-		F3B000092F84F0DE00390151 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100092F84F0DE00390151 /* ReportsViewController.swift */; };
-		F3B0000A2F84F0DE00390151 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1000A2F84F0DE00390151 /* RootTabBarController.swift */; };
+		F2FD00A02F84F77500390151 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD009F2F84F77500390151 /* EntryCell.swift */; };
+		F2FD00A22F84F7A900390151 /* LimitWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD00A12F84F7A900390151 /* LimitWarningView.swift */; };
+		F2FD00A42F84F7DB00390151 /* BudgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD00A32F84F7DB00390151 /* BudgetEntry.swift */; };
+		F2FD00A62F84F81300390151 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD00A52F84F81300390151 /* RootTabBarController.swift */; };
+		F2FD00A82F84F84400390151 /* BudgetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD00A72F84F84400390151 /* BudgetStore.swift */; };
+		F2FD00AA2F84F89C00390151 /* ReportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD00A92F84F89C00390151 /* ReportsViewModel.swift */; };
+		F2FD00AC2F84F8E000390151 /* BudgetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD00AB2F84F8E000390151 /* BudgetListViewModel.swift */; };
+		F2FD00AE2F84F91100390151 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD00AD2F84F91100390151 /* Notifications.swift */; };
+		F2FD00B02F84F95E00390151 /* BudgetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD00AF2F84F95E00390151 /* BudgetListViewController.swift */; };
+		F2FD00B22F84F99900390151 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD00B12F84F99900390151 /* ReportsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,16 +34,16 @@
 		F2FD00942F84F0E000390151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2FD00972F84F0E000390151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2FD00992F84F0E000390151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3A100012F84F0DE00390151 /* BudgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/BudgetEntry.swift; sourceTree = "<group>"; };
-		F3A100022F84F0DE00390151 /* BudgetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/BudgetStore.swift; sourceTree = "<group>"; };
-		F3A100032F84F0DE00390151 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/Notifications.swift; sourceTree = "<group>"; };
-		F3A100042F84F0DE00390151 /* BudgetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/BudgetListViewModel.swift; sourceTree = "<group>"; };
-		F3A100052F84F0DE00390151 /* ReportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/ReportsViewModel.swift; sourceTree = "<group>"; };
-		F3A100062F84F0DE00390151 /* LimitWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/LimitWarningView.swift; sourceTree = "<group>"; };
-		F3A100072F84F0DE00390151 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/EntryCell.swift; sourceTree = "<group>"; };
-		F3A100082F84F0DE00390151 /* BudgetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers/BudgetListViewController.swift; sourceTree = "<group>"; };
-		F3A100092F84F0DE00390151 /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers/ReportsViewController.swift; sourceTree = "<group>"; };
-		F3A1000A2F84F0DE00390151 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/RootTabBarController.swift; sourceTree = "<group>"; };
+		F2FD009F2F84F77500390151 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
+		F2FD00A12F84F7A900390151 /* LimitWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitWarningView.swift; sourceTree = "<group>"; };
+		F2FD00A32F84F7DB00390151 /* BudgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetEntry.swift; sourceTree = "<group>"; };
+		F2FD00A52F84F81300390151 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		F2FD00A72F84F84400390151 /* BudgetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetStore.swift; sourceTree = "<group>"; };
+		F2FD00A92F84F89C00390151 /* ReportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewModel.swift; sourceTree = "<group>"; };
+		F2FD00AB2F84F8E000390151 /* BudgetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListViewModel.swift; sourceTree = "<group>"; };
+		F2FD00AD2F84F91100390151 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		F2FD00AF2F84F95E00390151 /* BudgetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListViewController.swift; sourceTree = "<group>"; };
+		F2FD00B12F84F99900390151 /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 		F3A200012F84F0DE00390151 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				F3A1000A2F84F0DE00390151 /* RootTabBarController.swift */,
+				F2FD00A52F84F81300390151 /* RootTabBarController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 		F3A200022F84F0DE00390151 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F3A100012F84F0DE00390151 /* BudgetEntry.swift */,
+				F2FD00A32F84F7DB00390151 /* BudgetEntry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -112,8 +112,8 @@
 		F3A200032F84F0DE00390151 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F3A100022F84F0DE00390151 /* BudgetStore.swift */,
-				F3A100032F84F0DE00390151 /* Notifications.swift */,
+				F2FD00A72F84F84400390151 /* BudgetStore.swift */,
+				F2FD00AD2F84F91100390151 /* Notifications.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -121,8 +121,8 @@
 		F3A200042F84F0DE00390151 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F3A100042F84F0DE00390151 /* BudgetListViewModel.swift */,
-				F3A100052F84F0DE00390151 /* ReportsViewModel.swift */,
+				F2FD00A92F84F89C00390151 /* ReportsViewModel.swift */,
+				F2FD00AB2F84F8E000390151 /* BudgetListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -130,8 +130,8 @@
 		F3A200052F84F0DE00390151 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F3A100062F84F0DE00390151 /* LimitWarningView.swift */,
-				F3A100072F84F0DE00390151 /* EntryCell.swift */,
+				F2FD009F2F84F77500390151 /* EntryCell.swift */,
+				F2FD00A12F84F7A900390151 /* LimitWarningView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,8 +139,8 @@
 		F3A200062F84F0DE00390151 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F3A100082F84F0DE00390151 /* BudgetListViewController.swift */,
-				F3A100092F84F0DE00390151 /* ReportsViewController.swift */,
+				F2FD00AF2F84F95E00390151 /* BudgetListViewController.swift */,
+				F2FD00B12F84F99900390151 /* ReportsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -216,19 +216,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3B0000A2F84F0DE00390151 /* RootTabBarController.swift in Sources */,
-				F3B000082F84F0DE00390151 /* BudgetListViewController.swift in Sources */,
-				F3B000092F84F0DE00390151 /* ReportsViewController.swift in Sources */,
-				F3B000062F84F0DE00390151 /* LimitWarningView.swift in Sources */,
-				F3B000072F84F0DE00390151 /* EntryCell.swift in Sources */,
-				F3B000042F84F0DE00390151 /* BudgetListViewModel.swift in Sources */,
-				F3B000052F84F0DE00390151 /* ReportsViewModel.swift in Sources */,
-				F3B000012F84F0DE00390151 /* BudgetEntry.swift in Sources */,
-				F3B000022F84F0DE00390151 /* BudgetStore.swift in Sources */,
-				F3B000032F84F0DE00390151 /* Notifications.swift in Sources */,
+				F2FD00A62F84F81300390151 /* RootTabBarController.swift in Sources */,
+				F2FD00B02F84F95E00390151 /* BudgetListViewController.swift in Sources */,
+				F2FD00A82F84F84400390151 /* BudgetStore.swift in Sources */,
+				F2FD00AA2F84F89C00390151 /* ReportsViewModel.swift in Sources */,
+				F2FD00AE2F84F91100390151 /* Notifications.swift in Sources */,
+				F2FD00AC2F84F8E000390151 /* BudgetListViewModel.swift in Sources */,
+				F2FD00A02F84F77500390151 /* EntryCell.swift in Sources */,
 				F2FD00902F84F0DE00390151 /* ViewController.swift in Sources */,
+				F2FD00A42F84F7DB00390151 /* BudgetEntry.swift in Sources */,
+				F2FD00B22F84F99900390151 /* ReportsViewController.swift in Sources */,
 				F2FD008C2F84F0DE00390151 /* AppDelegate.swift in Sources */,
 				F2FD008E2F84F0DE00390151 /* SceneDelegate.swift in Sources */,
+				F2FD00A22F84F7A900390151 /* LimitWarningView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

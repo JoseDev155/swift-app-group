@@ -1,3 +1,10 @@
+//
+//  BudgetEntry.swift
+//  PersonalBudgetManager
+//
+//  Created by Jose Ramos on 7/4/26.
+//
+
 import Foundation
 
 enum EntryType: String, Codable, CaseIterable {

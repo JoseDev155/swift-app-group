@@ -1,3 +1,10 @@
+//
+//  BudgetListViewController.swift
+//  PersonalBudgetManager
+//
+//  Created by Jose Ramos on 7/4/26.
+//
+
 import UIKit
 
 final class BudgetListViewController: UIViewController {
@@ -204,17 +211,10 @@ final class BudgetListViewController: UIViewController {
 
             if let index = index {
                 self.viewModel.updateEntry(at: index, title: titleText, amount: amount, category: categoryText, type: type)
-                self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
             } else {
-                let entry = self.viewModel.addEntry(title: titleText, amount: amount, category: categoryText, type: type)
-                if let newIndex = self.viewModel.entries.firstIndex(where: { $0.id == entry.id }) {
-                    let indexPath = IndexPath(row: newIndex, section: 0)
-                    self.tableView.insertRows(at: [indexPath], with: .automatic)
-                    self.tableView.scrollToRow(at: indexPath, at: .middle, animated: true)
-                } else {
-                    self.tableView.reloadData()
-                }
+                _ = self.viewModel.addEntry(title: titleText, amount: amount, category: categoryText, type: type)
             }
+            self.tableView.reloadData()
             self.updateSummary(animated: true)
         }
 
@@ -233,7 +233,7 @@ final class BudgetListViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel))
         alert.addAction(UIAlertAction(title: "Eliminar", style: .destructive) { [weak self] _ in
             self?.viewModel.deleteEntry(at: indexPath.row)
-            self?.tableView.deleteRows(at: [indexPath], with: .automatic)
+            self?.tableView.reloadData()
             self?.updateSummary(animated: true)
         })
         present(alert, animated: true)
@@ -292,3 +292,4 @@ extension BudgetListViewController: UITableViewDelegate {
         return UISwipeActionsConfiguration(actions: [deleteAction, editAction])
     }
 }
+

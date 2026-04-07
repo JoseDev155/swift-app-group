@@ -1,3 +1,10 @@
+//
+//  BudgetStore.swift
+//  PersonalBudgetManager
+//
+//  Created by Jose Ramos on 7/4/26.
+//
+
 import Foundation
 
 protocol BudgetStoreProtocol {
@@ -98,8 +105,5 @@ final class BudgetStore: BudgetStoreProtocol {
         return 200
     }
 
-    private static let defaultEntries: [BudgetEntry] = [
-        BudgetEntry(id: "rent", title: "Renta", amount: 120, category: "Vivienda", type: .expense, date: Date()),
-        BudgetEntry(id: "groceries", title: "Supermercado", amount: 45, category: "Alimentos", type: .expense, date: Date())
-    ]
+    private static let defaultEntries: [BudgetEntry] = []
 }
