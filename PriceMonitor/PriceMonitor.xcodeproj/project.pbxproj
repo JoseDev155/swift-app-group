@@ -13,6 +13,16 @@
 		F2FD01472F85C3A600390151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD01452F85C3A600390151 /* Main.storyboard */; };
 		F2FD01492F85C3AA00390151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FD01482F85C3AA00390151 /* Assets.xcassets */; };
 		F2FD014C2F85C3AA00390151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD014A2F85C3AA00390151 /* LaunchScreen.storyboard */; };
+		A6C000012F86FF0000000001 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B100012F86FF0000000001 /* RootTabBarController.swift */; };
+		A6C000022F86FF0000000002 /* EntryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B100022F86FF0000000002 /* EntryContext.swift */; };
+		A6C000032F86FF0000000003 /* PriceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B100032F86FF0000000003 /* PriceItem.swift */; };
+		A6C000042F86FF0000000004 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B100042F86FF0000000004 /* Notifications.swift */; };
+		A6C000052F86FF0000000005 /* PriceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B100052F86FF0000000005 /* PriceStore.swift */; };
+		A6C000062F86FF0000000006 /* PriceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B100062F86FF0000000006 /* PriceListViewModel.swift */; };
+		A6C000072F86FF0000000007 /* PriceSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B100072F86FF0000000007 /* PriceSummaryViewModel.swift */; };
+		A6C000082F86FF0000000008 /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B100082F86FF0000000008 /* PriceCell.swift */; };
+		A6C000092F86FF0000000009 /* PriceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B100092F86FF0000000009 /* PriceListViewController.swift */; };
+		A6C0000A2F86FF000000000A /* PriceSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B1000A2F86FF000000000A /* PriceSummaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		F2FD01482F85C3AA00390151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2FD014B2F85C3AA00390151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2FD014D2F85C3AA00390151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B100012F86FF0000000001 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		A6B100022F86FF0000000002 /* EntryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryContext.swift; sourceTree = "<group>"; };
+		A6B100032F86FF0000000003 /* PriceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceItem.swift; sourceTree = "<group>"; };
+		A6B100042F86FF0000000004 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		A6B100052F86FF0000000005 /* PriceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceStore.swift; sourceTree = "<group>"; };
+		A6B100062F86FF0000000006 /* PriceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListViewModel.swift; sourceTree = "<group>"; };
+		A6B100072F86FF0000000007 /* PriceSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceSummaryViewModel.swift; sourceTree = "<group>"; };
+		A6B100082F86FF0000000008 /* PriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCell.swift; sourceTree = "<group>"; };
+		A6B100092F86FF0000000009 /* PriceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListViewController.swift; sourceTree = "<group>"; };
+		A6B1000A2F86FF000000000A /* PriceSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceSummaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,12 @@
 		F2FD013E2F85C3A600390151 /* PriceMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				A6D200012F86FF0000000001 /* App */,
+				A6D200022F86FF0000000002 /* Models */,
+				A6D200032F86FF0000000003 /* Services */,
+				A6D200042F86FF0000000004 /* ViewModels */,
+				A6D200052F86FF0000000005 /* Views */,
+				A6D200062F86FF0000000006 /* ViewControllers */,
 				F2FD013F2F85C3A600390151 /* AppDelegate.swift */,
 				F2FD01412F85C3A600390151 /* SceneDelegate.swift */,
 				F2FD01432F85C3A600390151 /* ViewController.swift */,
@@ -65,6 +91,58 @@
 				F2FD014D2F85C3AA00390151 /* Info.plist */,
 			);
 			path = PriceMonitor;
+			sourceTree = "<group>";
+		};
+		A6D200012F86FF0000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A6B100012F86FF0000000001 /* RootTabBarController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A6D200022F86FF0000000002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6B100022F86FF0000000002 /* EntryContext.swift */,
+				A6B100032F86FF0000000003 /* PriceItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6D200032F86FF0000000003 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A6B100042F86FF0000000004 /* Notifications.swift */,
+				A6B100052F86FF0000000005 /* PriceStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A6D200042F86FF0000000004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A6B100062F86FF0000000006 /* PriceListViewModel.swift */,
+				A6B100072F86FF0000000007 /* PriceSummaryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A6D200052F86FF0000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6B100082F86FF0000000008 /* PriceCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6D200062F86FF0000000006 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6B100092F86FF0000000009 /* PriceListViewController.swift */,
+				A6B1000A2F86FF000000000A /* PriceSummaryViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C000012F86FF0000000001 /* RootTabBarController.swift in Sources */,
+				A6C000092F86FF0000000009 /* PriceListViewController.swift in Sources */,
+				A6C0000A2F86FF000000000A /* PriceSummaryViewController.swift in Sources */,
+				A6C000082F86FF0000000008 /* PriceCell.swift in Sources */,
+				A6C000062F86FF0000000006 /* PriceListViewModel.swift in Sources */,
+				A6C000072F86FF0000000007 /* PriceSummaryViewModel.swift in Sources */,
+				A6C000042F86FF0000000004 /* Notifications.swift in Sources */,
+				A6C000052F86FF0000000005 /* PriceStore.swift in Sources */,
+				A6C000022F86FF0000000002 /* EntryContext.swift in Sources */,
+				A6C000032F86FF0000000003 /* PriceItem.swift in Sources */,
 				F2FD01442F85C3A600390151 /* ViewController.swift in Sources */,
 				F2FD01402F85C3A600390151 /* AppDelegate.swift in Sources */,
 				F2FD01422F85C3A600390151 /* SceneDelegate.swift in Sources */,
@@ -293,7 +381,6 @@
 				INFOPLIST_FILE = PriceMonitor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +407,6 @@
 				INFOPLIST_FILE = PriceMonitor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
