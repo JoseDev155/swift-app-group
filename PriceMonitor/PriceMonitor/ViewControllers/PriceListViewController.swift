@@ -98,7 +98,7 @@ final class PriceListViewController: UIViewController {
             textField.text = item?.name
         }
         alert.addTextField { textField in
-            textField.placeholder = "Codigo de moneda (USD)"
+            textField.placeholder = "Código de moneda (USD)"
             textField.text = item?.currencyCode
         }
         alert.addTextField { textField in
@@ -122,17 +122,17 @@ final class PriceListViewController: UIViewController {
             let normalizedValue = valueText.replacingOccurrences(of: ",", with: ".")
 
             guard !nameText.isEmpty else {
-                self.presentValidationAlert(message: "Ingresa un nombre valido.")
+                self.presentValidationAlert(message: "Ingresa un nombre válido.")
                 return
             }
 
             guard currencyText.count >= 2 else {
-                self.presentValidationAlert(message: "Ingresa un codigo de moneda valido.")
+                self.presentValidationAlert(message: "Ingresa un código de moneda válido.")
                 return
             }
 
             guard let value = Double(normalizedValue), value > 0 else {
-                self.presentValidationAlert(message: "Ingresa un valor valido.")
+                self.presentValidationAlert(message: "Ingresa un valor válido.")
                 return
             }
 
@@ -163,7 +163,7 @@ final class PriceListViewController: UIViewController {
     }
 
     private func presentValidationAlert(message: String) {
-        let alert = UIAlertController(title: "Datos invalidos", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Datos inválidos", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Entendido", style: .default))
         present(alert, animated: true)
     }

@@ -32,7 +32,7 @@ extension PriceItem {
 
     var changeText: String {
         if changeValue == 0 {
-            return "Sin cambio"
+            return "Sin cambios"
         }
         let sign = changeValue > 0 ? "+" : ""
         return sign + String(format: "%.2f", changeValue)

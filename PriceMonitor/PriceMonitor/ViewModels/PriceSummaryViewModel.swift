@@ -48,11 +48,11 @@ final class PriceSummaryViewModel {
 
     func lastUpdateText() -> String {
         guard let lastDate = store.prices.map({ $0.updatedAt }).max() else {
-            return "Ultima actualizacion: sin datos."
+            return "Última actualización: sin datos."
         }
         let formatter = DateFormatter()
         formatter.dateStyle = .short
         formatter.timeStyle = .short
-        return "Ultima actualizacion: \(formatter.string(from: lastDate))"
+        return "Última actualización: \(formatter.string(from: lastDate))"
     }
 }
