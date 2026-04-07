@@ -13,6 +13,16 @@
 		F2FD00932F84F0DE00390151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD00912F84F0DE00390151 /* Main.storyboard */; };
 		F2FD00952F84F0E000390151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FD00942F84F0E000390151 /* Assets.xcassets */; };
 		F2FD00982F84F0E000390151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD00962F84F0E000390151 /* LaunchScreen.storyboard */; };
+		F3B000012F84F0DE00390151 /* BudgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100012F84F0DE00390151 /* BudgetEntry.swift */; };
+		F3B000022F84F0DE00390151 /* BudgetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100022F84F0DE00390151 /* BudgetStore.swift */; };
+		F3B000032F84F0DE00390151 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100032F84F0DE00390151 /* Notifications.swift */; };
+		F3B000042F84F0DE00390151 /* BudgetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100042F84F0DE00390151 /* BudgetListViewModel.swift */; };
+		F3B000052F84F0DE00390151 /* ReportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100052F84F0DE00390151 /* ReportsViewModel.swift */; };
+		F3B000062F84F0DE00390151 /* LimitWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100062F84F0DE00390151 /* LimitWarningView.swift */; };
+		F3B000072F84F0DE00390151 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100072F84F0DE00390151 /* EntryCell.swift */; };
+		F3B000082F84F0DE00390151 /* BudgetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100082F84F0DE00390151 /* BudgetListViewController.swift */; };
+		F3B000092F84F0DE00390151 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A100092F84F0DE00390151 /* ReportsViewController.swift */; };
+		F3B0000A2F84F0DE00390151 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1000A2F84F0DE00390151 /* RootTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		F2FD00942F84F0E000390151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2FD00972F84F0E000390151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2FD00992F84F0E000390151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A100012F84F0DE00390151 /* BudgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/BudgetEntry.swift; sourceTree = "<group>"; };
+		F3A100022F84F0DE00390151 /* BudgetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/BudgetStore.swift; sourceTree = "<group>"; };
+		F3A100032F84F0DE00390151 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/Notifications.swift; sourceTree = "<group>"; };
+		F3A100042F84F0DE00390151 /* BudgetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/BudgetListViewModel.swift; sourceTree = "<group>"; };
+		F3A100052F84F0DE00390151 /* ReportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/ReportsViewModel.swift; sourceTree = "<group>"; };
+		F3A100062F84F0DE00390151 /* LimitWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/LimitWarningView.swift; sourceTree = "<group>"; };
+		F3A100072F84F0DE00390151 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/EntryCell.swift; sourceTree = "<group>"; };
+		F3A100082F84F0DE00390151 /* BudgetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers/BudgetListViewController.swift; sourceTree = "<group>"; };
+		F3A100092F84F0DE00390151 /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers/ReportsViewController.swift; sourceTree = "<group>"; };
+		F3A1000A2F84F0DE00390151 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/RootTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,12 @@
 		F2FD008A2F84F0DE00390151 /* PersonalBudgetManager */ = {
 			isa = PBXGroup;
 			children = (
+				F3A200012F84F0DE00390151 /* App */,
+				F3A200022F84F0DE00390151 /* Models */,
+				F3A200032F84F0DE00390151 /* Services */,
+				F3A200042F84F0DE00390151 /* ViewModels */,
+				F3A200052F84F0DE00390151 /* Views */,
+				F3A200062F84F0DE00390151 /* ViewControllers */,
 				F2FD008B2F84F0DE00390151 /* AppDelegate.swift */,
 				F2FD008D2F84F0DE00390151 /* SceneDelegate.swift */,
 				F2FD008F2F84F0DE00390151 /* ViewController.swift */,
@@ -65,6 +91,58 @@
 				F2FD00992F84F0E000390151 /* Info.plist */,
 			);
 			path = PersonalBudgetManager;
+			sourceTree = "<group>";
+		};
+		F3A200012F84F0DE00390151 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F3A1000A2F84F0DE00390151 /* RootTabBarController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F3A200022F84F0DE00390151 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3A100012F84F0DE00390151 /* BudgetEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3A200032F84F0DE00390151 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F3A100022F84F0DE00390151 /* BudgetStore.swift */,
+				F3A100032F84F0DE00390151 /* Notifications.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F3A200042F84F0DE00390151 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F3A100042F84F0DE00390151 /* BudgetListViewModel.swift */,
+				F3A100052F84F0DE00390151 /* ReportsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F3A200052F84F0DE00390151 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3A100062F84F0DE00390151 /* LimitWarningView.swift */,
+				F3A100072F84F0DE00390151 /* EntryCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3A200062F84F0DE00390151 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3A100082F84F0DE00390151 /* BudgetListViewController.swift */,
+				F3A100092F84F0DE00390151 /* ReportsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B0000A2F84F0DE00390151 /* RootTabBarController.swift in Sources */,
+				F3B000082F84F0DE00390151 /* BudgetListViewController.swift in Sources */,
+				F3B000092F84F0DE00390151 /* ReportsViewController.swift in Sources */,
+				F3B000062F84F0DE00390151 /* LimitWarningView.swift in Sources */,
+				F3B000072F84F0DE00390151 /* EntryCell.swift in Sources */,
+				F3B000042F84F0DE00390151 /* BudgetListViewModel.swift in Sources */,
+				F3B000052F84F0DE00390151 /* ReportsViewModel.swift in Sources */,
+				F3B000012F84F0DE00390151 /* BudgetEntry.swift in Sources */,
+				F3B000022F84F0DE00390151 /* BudgetStore.swift in Sources */,
+				F3B000032F84F0DE00390151 /* Notifications.swift in Sources */,
 				F2FD00902F84F0DE00390151 /* ViewController.swift in Sources */,
 				F2FD008C2F84F0DE00390151 /* AppDelegate.swift in Sources */,
 				F2FD008E2F84F0DE00390151 /* SceneDelegate.swift in Sources */,
@@ -293,7 +381,6 @@
 				INFOPLIST_FILE = PersonalBudgetManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +407,6 @@
 				INFOPLIST_FILE = PersonalBudgetManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
