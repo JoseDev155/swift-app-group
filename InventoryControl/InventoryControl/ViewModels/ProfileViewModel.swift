@@ -44,9 +44,9 @@ final class ProfileViewModel {
             return "Pasillos: sin registros."
         }
 
-        let lines = grouped.keys.sorted().map { aisle in
+        let lines = grouped.keys.sorted().map { (aisle: String) -> String in
             let sections = grouped[aisle] ?? [:]
-            let sectionDetails = sections.keys.sorted().map { section in
+            let sectionDetails: [String] = sections.keys.sorted().map { (section: String) -> String in
                 let count = sections[section]?.count ?? 0
                 return "Sección \(section) (\(count))"
             }
