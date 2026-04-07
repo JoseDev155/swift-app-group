@@ -13,6 +13,20 @@
 		F2FD01872F85CB5600390151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD01852F85CB5600390151 /* Main.storyboard */; };
 		F2FD01892F85CB5900390151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FD01882F85CB5900390151 /* Assets.xcassets */; };
 		F2FD018C2F85CB5A00390151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD018A2F85CB5900390151 /* LaunchScreen.storyboard */; };
+		A7C000012F87100000000001 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B100012F87100000000001 /* RootTabBarController.swift */; };
+		A7C000022F87100000000002 /* EntryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B100022F87100000000002 /* EntryContext.swift */; };
+		A7C000032F87100000000003 /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B100032F87100000000003 /* InventoryItem.swift */; };
+		A7C000042F87100000000004 /* InventoryProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B100042F87100000000004 /* InventoryProfile.swift */; };
+		A7C000052F87100000000005 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B100052F87100000000005 /* Notifications.swift */; };
+		A7C000062F87100000000006 /* InventoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B100062F87100000000006 /* InventoryStore.swift */; };
+		A7C000072F87100000000007 /* InventoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B100072F87100000000007 /* InventoryListViewModel.swift */; };
+		A7C000082F87100000000008 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B100082F87100000000008 /* ScannerViewModel.swift */; };
+		A7C000092F87100000000009 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B100092F87100000000009 /* ProfileViewModel.swift */; };
+		A7C0000A2F8710000000000A /* InventoryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B1000A2F8710000000000A /* InventoryItemCell.swift */; };
+		A7C0000B2F8710000000000B /* InventorySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B1000B2F8710000000000B /* InventorySummaryView.swift */; };
+		A7C0000C2F8710000000000C /* InventoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B1000C2F8710000000000C /* InventoryListViewController.swift */; };
+		A7C0000D2F8710000000000D /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B1000D2F8710000000000D /* ScannerViewController.swift */; };
+		A7C0000E2F8710000000000E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B1000E2F8710000000000E /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +38,20 @@
 		F2FD01882F85CB5900390151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2FD018B2F85CB5A00390151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2FD018D2F85CB5A00390151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B100012F87100000000001 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		A7B100022F87100000000002 /* EntryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryContext.swift; sourceTree = "<group>"; };
+		A7B100032F87100000000003 /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+		A7B100042F87100000000004 /* InventoryProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryProfile.swift; sourceTree = "<group>"; };
+		A7B100052F87100000000005 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		A7B100062F87100000000006 /* InventoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryStore.swift; sourceTree = "<group>"; };
+		A7B100072F87100000000007 /* InventoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListViewModel.swift; sourceTree = "<group>"; };
+		A7B100082F87100000000008 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		A7B100092F87100000000009 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		A7B1000A2F8710000000000A /* InventoryItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemCell.swift; sourceTree = "<group>"; };
+		A7B1000B2F8710000000000B /* InventorySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventorySummaryView.swift; sourceTree = "<group>"; };
+		A7B1000C2F8710000000000C /* InventoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListViewController.swift; sourceTree = "<group>"; };
+		A7B1000D2F8710000000000D /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		A7B1000E2F8710000000000E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,12 @@
 		F2FD017E2F85CB5600390151 /* InventoryControl */ = {
 			isa = PBXGroup;
 			children = (
+				A7D200012F87100000000001 /* App */,
+				A7D200022F87100000000002 /* Models */,
+				A7D200032F87100000000003 /* Services */,
+				A7D200042F87100000000004 /* ViewModels */,
+				A7D200052F87100000000005 /* Views */,
+				A7D200062F87100000000006 /* ViewControllers */,
 				F2FD017F2F85CB5600390151 /* AppDelegate.swift */,
 				F2FD01812F85CB5600390151 /* SceneDelegate.swift */,
 				F2FD01832F85CB5600390151 /* ViewController.swift */,
@@ -65,6 +99,62 @@
 				F2FD018D2F85CB5A00390151 /* Info.plist */,
 			);
 			path = InventoryControl;
+			sourceTree = "<group>";
+		};
+		A7D200012F87100000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A7B100012F87100000000001 /* RootTabBarController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A7D200022F87100000000002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7B100022F87100000000002 /* EntryContext.swift */,
+				A7B100032F87100000000003 /* InventoryItem.swift */,
+				A7B100042F87100000000004 /* InventoryProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7D200032F87100000000003 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A7B100052F87100000000005 /* Notifications.swift */,
+				A7B100062F87100000000006 /* InventoryStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A7D200042F87100000000004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A7B100072F87100000000007 /* InventoryListViewModel.swift */,
+				A7B100082F87100000000008 /* ScannerViewModel.swift */,
+				A7B100092F87100000000009 /* ProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A7D200052F87100000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7B1000A2F8710000000000A /* InventoryItemCell.swift */,
+				A7B1000B2F8710000000000B /* InventorySummaryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7D200062F87100000000006 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7B1000C2F8710000000000C /* InventoryListViewController.swift */,
+				A7B1000D2F8710000000000D /* ScannerViewController.swift */,
+				A7B1000E2F8710000000000E /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +228,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C000012F87100000000001 /* RootTabBarController.swift in Sources */,
+				A7C0000C2F8710000000000C /* InventoryListViewController.swift in Sources */,
+				A7C0000D2F8710000000000D /* ScannerViewController.swift in Sources */,
+				A7C0000E2F8710000000000E /* ProfileViewController.swift in Sources */,
+				A7C0000A2F8710000000000A /* InventoryItemCell.swift in Sources */,
+				A7C0000B2F8710000000000B /* InventorySummaryView.swift in Sources */,
+				A7C000072F87100000000007 /* InventoryListViewModel.swift in Sources */,
+				A7C000082F87100000000008 /* ScannerViewModel.swift in Sources */,
+				A7C000092F87100000000009 /* ProfileViewModel.swift in Sources */,
+				A7C000052F87100000000005 /* Notifications.swift in Sources */,
+				A7C000062F87100000000006 /* InventoryStore.swift in Sources */,
+				A7C000022F87100000000002 /* EntryContext.swift in Sources */,
+				A7C000032F87100000000003 /* InventoryItem.swift in Sources */,
+				A7C000042F87100000000004 /* InventoryProfile.swift in Sources */,
 				F2FD01842F85CB5600390151 /* ViewController.swift in Sources */,
 				F2FD01802F85CB5600390151 /* AppDelegate.swift in Sources */,
 				F2FD01822F85CB5600390151 /* SceneDelegate.swift in Sources */,
@@ -293,7 +397,6 @@
 				INFOPLIST_FILE = InventoryControl/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +423,6 @@
 				INFOPLIST_FILE = InventoryControl/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
