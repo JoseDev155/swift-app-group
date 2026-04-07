@@ -1,3 +1,10 @@
+//
+//  TravelEntry.swift
+//  TravelDiary
+//
+//  Created by Jose Ramos on 7/4/26.
+//
+
 import Foundation
 
 struct TravelEntry: Hashable, Codable {

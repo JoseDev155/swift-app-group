@@ -1,3 +1,10 @@
+//
+//  TravelSettingsViewController.swift
+//  TravelDiary
+//
+//  Created by Jose Ramos on 7/4/26.
+//
+
 import UIKit
 
 final class TravelSettingsViewController: UIViewController {
@@ -60,7 +67,7 @@ final class TravelSettingsViewController: UIViewController {
     @objc private func editPreferences() {
         let alert = UIAlertController(title: "Preferencias", message: nil, preferredStyle: .alert)
         alert.addTextField { textField in
-            textField.placeholder = "Unidad (Kilometros/Millas)"
+            textField.placeholder = "Unidad (Kilómetros/Millas)"
             textField.text = self.viewModel.preferences.distanceUnit.title
         }
         alert.addTextField { textField in
@@ -98,7 +105,10 @@ final class TravelSettingsViewController: UIViewController {
     }
 
     private func unit(from value: String) -> DistanceUnit? {
-        let normalized = value.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        let normalized = value
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .lowercased()
+            .folding(options: .diacriticInsensitive, locale: .current)
         switch normalized {
         case "kilometros", "km":
             return .kilometers
@@ -110,7 +120,7 @@ final class TravelSettingsViewController: UIViewController {
     }
 
     private func presentValidationAlert(message: String) {
-        let alert = UIAlertController(title: "Datos invalidos", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Datos inválidos", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Entendido", style: .default))
         present(alert, animated: true)
     }

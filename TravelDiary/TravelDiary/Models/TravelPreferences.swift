@@ -1,3 +1,10 @@
+//
+//  TravelPreferences.swift
+//  TravelDiary
+//
+//  Created by Jose Ramos on 7/4/26.
+//
+
 import Foundation
 
 enum DistanceUnit: String, Codable, CaseIterable {
@@ -7,7 +14,7 @@ enum DistanceUnit: String, Codable, CaseIterable {
     var title: String {
         switch self {
         case .kilometers:
-            return "Kilometros"
+            return "Kilómetros"
         case .miles:
             return "Millas"
         }

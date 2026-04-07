@@ -1,3 +1,10 @@
+//
+//  TravelSummaryViewController.swift
+//  TravelDiary
+//
+//  Created by Jose Ramos on 7/4/26.
+//
+
 import UIKit
 
 final class TravelSummaryViewController: UIViewController {
@@ -91,7 +98,7 @@ extension TravelSummaryViewController: UITableViewDataSource {
         if section == 0 {
             return "Resumen"
         }
-        return "Por anio"
+        return "Por año"
     }
 }
 
