@@ -37,9 +37,6 @@ Practicar la organización de datos complejos.
 
 ## 7. Mi Lista de Películas por Ver
 
-**Universidad Católica de El Salvador**  
-**Modalidad Presencial**
-
 - **Funciones:** Un `UITableView` con imágenes de posters. `NSUserDefaults` guarda la configuración de orden (alfabético o por fecha).
 - **Visual:** Al borrar una película, usa animaciones de `UIView` para que la celda se desvanezca suavemente.
 
