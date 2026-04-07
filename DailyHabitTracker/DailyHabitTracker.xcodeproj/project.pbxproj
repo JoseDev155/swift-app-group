@@ -13,6 +13,16 @@
 		F24A49292F83D0E200C80DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24A49272F83D0E200C80DDA /* Main.storyboard */; };
 		F24A492B2F83D0E600C80DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24A492A2F83D0E600C80DDA /* Assets.xcassets */; };
 		F24A492E2F83D0E600C80DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24A492C2F83D0E600C80DDA /* LaunchScreen.storyboard */; };
+		F2B200012F83D0E200C80DDA /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B100012F83D0E200C80DDA /* Habit.swift */; };
+		F2B200022F83D0E200C80DDA /* HabitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B100022F83D0E200C80DDA /* HabitStore.swift */; };
+		F2B200032F83D0E200C80DDA /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B100032F83D0E200C80DDA /* Notifications.swift */; };
+		F2B200042F83D0E200C80DDA /* HabitsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B100042F83D0E200C80DDA /* HabitsListViewModel.swift */; };
+		F2B200052F83D0E200C80DDA /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B100052F83D0E200C80DDA /* StatsViewModel.swift */; };
+		F2B200062F83D0E200C80DDA /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B100062F83D0E200C80DDA /* CheckmarkView.swift */; };
+		F2B200072F83D0E200C80DDA /* HabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B100072F83D0E200C80DDA /* HabitCell.swift */; };
+		F2B200082F83D0E200C80DDA /* HabitsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B100082F83D0E200C80DDA /* HabitsListViewController.swift */; };
+		F2B200092F83D0E200C80DDA /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B100092F83D0E200C80DDA /* StatsViewController.swift */; };
+		F2B2000A2F83D0E200C80DDA /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1000A2F83D0E200C80DDA /* RootTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		F24A492A2F83D0E600C80DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F24A492D2F83D0E600C80DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F24A492F2F83D0E600C80DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B100012F83D0E200C80DDA /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Habit.swift; sourceTree = "<group>"; };
+		F2B100022F83D0E200C80DDA /* HabitStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/HabitStore.swift; sourceTree = "<group>"; };
+		F2B100032F83D0E200C80DDA /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/Notifications.swift; sourceTree = "<group>"; };
+		F2B100042F83D0E200C80DDA /* HabitsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/HabitsListViewModel.swift; sourceTree = "<group>"; };
+		F2B100052F83D0E200C80DDA /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/StatsViewModel.swift; sourceTree = "<group>"; };
+		F2B100062F83D0E200C80DDA /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/CheckmarkView.swift; sourceTree = "<group>"; };
+		F2B100072F83D0E200C80DDA /* HabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/HabitCell.swift; sourceTree = "<group>"; };
+		F2B100082F83D0E200C80DDA /* HabitsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers/HabitsListViewController.swift; sourceTree = "<group>"; };
+		F2B100092F83D0E200C80DDA /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers/StatsViewController.swift; sourceTree = "<group>"; };
+		F2B1000A2F83D0E200C80DDA /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/RootTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,12 @@
 		F24A49202F83D0E200C80DDA /* DailyHabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				F2B300012F83D0E200C80DDA /* App */,
+				F2B300022F83D0E200C80DDA /* Models */,
+				F2B300032F83D0E200C80DDA /* Services */,
+				F2B300042F83D0E200C80DDA /* ViewModels */,
+				F2B300052F83D0E200C80DDA /* Views */,
+				F2B300062F83D0E200C80DDA /* ViewControllers */,
 				F24A49212F83D0E200C80DDA /* AppDelegate.swift */,
 				F24A49232F83D0E200C80DDA /* SceneDelegate.swift */,
 				F24A49252F83D0E200C80DDA /* ViewController.swift */,
@@ -65,6 +91,58 @@
 				F24A492F2F83D0E600C80DDA /* Info.plist */,
 			);
 			path = DailyHabitTracker;
+			sourceTree = "<group>";
+		};
+		F2B300012F83D0E200C80DDA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F2B1000A2F83D0E200C80DDA /* RootTabBarController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F2B300022F83D0E200C80DDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2B100012F83D0E200C80DDA /* Habit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2B300032F83D0E200C80DDA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2B100022F83D0E200C80DDA /* HabitStore.swift */,
+				F2B100032F83D0E200C80DDA /* Notifications.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F2B300042F83D0E200C80DDA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2B100042F83D0E200C80DDA /* HabitsListViewModel.swift */,
+				F2B100052F83D0E200C80DDA /* StatsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F2B300052F83D0E200C80DDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2B100062F83D0E200C80DDA /* CheckmarkView.swift */,
+				F2B100072F83D0E200C80DDA /* HabitCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2B300062F83D0E200C80DDA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2B100082F83D0E200C80DDA /* HabitsListViewController.swift */,
+				F2B100092F83D0E200C80DDA /* StatsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B2000A2F83D0E200C80DDA /* RootTabBarController.swift in Sources */,
+				F2B200082F83D0E200C80DDA /* HabitsListViewController.swift in Sources */,
+				F2B200092F83D0E200C80DDA /* StatsViewController.swift in Sources */,
+				F2B200062F83D0E200C80DDA /* CheckmarkView.swift in Sources */,
+				F2B200072F83D0E200C80DDA /* HabitCell.swift in Sources */,
+				F2B200042F83D0E200C80DDA /* HabitsListViewModel.swift in Sources */,
+				F2B200052F83D0E200C80DDA /* StatsViewModel.swift in Sources */,
+				F2B200012F83D0E200C80DDA /* Habit.swift in Sources */,
+				F2B200022F83D0E200C80DDA /* HabitStore.swift in Sources */,
+				F2B200032F83D0E200C80DDA /* Notifications.swift in Sources */,
 				F24A49262F83D0E200C80DDA /* ViewController.swift in Sources */,
 				F24A49222F83D0E200C80DDA /* AppDelegate.swift in Sources */,
 				F24A49242F83D0E200C80DDA /* SceneDelegate.swift in Sources */,
