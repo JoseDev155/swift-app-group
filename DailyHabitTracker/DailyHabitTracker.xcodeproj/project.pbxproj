@@ -34,16 +34,16 @@
 		F24A492A2F83D0E600C80DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F24A492D2F83D0E600C80DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F24A492F2F83D0E600C80DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2B100012F83D0E200C80DDA /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Habit.swift; sourceTree = "<group>"; };
-		F2B100022F83D0E200C80DDA /* HabitStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/HabitStore.swift; sourceTree = "<group>"; };
-		F2B100032F83D0E200C80DDA /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/Notifications.swift; sourceTree = "<group>"; };
-		F2B100042F83D0E200C80DDA /* HabitsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/HabitsListViewModel.swift; sourceTree = "<group>"; };
-		F2B100052F83D0E200C80DDA /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/StatsViewModel.swift; sourceTree = "<group>"; };
-		F2B100062F83D0E200C80DDA /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/CheckmarkView.swift; sourceTree = "<group>"; };
-		F2B100072F83D0E200C80DDA /* HabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/HabitCell.swift; sourceTree = "<group>"; };
-		F2B100082F83D0E200C80DDA /* HabitsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers/HabitsListViewController.swift; sourceTree = "<group>"; };
-		F2B100092F83D0E200C80DDA /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers/StatsViewController.swift; sourceTree = "<group>"; };
-		F2B1000A2F83D0E200C80DDA /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/RootTabBarController.swift; sourceTree = "<group>"; };
+		F2B100012F83D0E200C80DDA /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Habit.swift; path = Models/Habit.swift; sourceTree = "<group>"; };
+		F2B100022F83D0E200C80DDA /* HabitStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HabitStore.swift; path = Services/HabitStore.swift; sourceTree = "<group>"; };
+		F2B100032F83D0E200C80DDA /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Services/Notifications.swift; sourceTree = "<group>"; };
+		F2B100042F83D0E200C80DDA /* HabitsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HabitsListViewModel.swift; path = ViewModels/HabitsListViewModel.swift; sourceTree = "<group>"; };
+		F2B100052F83D0E200C80DDA /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatsViewModel.swift; path = ViewModels/StatsViewModel.swift; sourceTree = "<group>"; };
+		F2B100062F83D0E200C80DDA /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CheckmarkView.swift; path = Views/CheckmarkView.swift; sourceTree = "<group>"; };
+		F2B100072F83D0E200C80DDA /* HabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HabitCell.swift; path = Views/HabitCell.swift; sourceTree = "<group>"; };
+		F2B100082F83D0E200C80DDA /* HabitsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HabitsListViewController.swift; path = ViewControllers/HabitsListViewController.swift; sourceTree = "<group>"; };
+		F2B100092F83D0E200C80DDA /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatsViewController.swift; path = ViewControllers/StatsViewController.swift; sourceTree = "<group>"; };
+		F2B1000A2F83D0E200C80DDA /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootTabBarController.swift; path = App/RootTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
