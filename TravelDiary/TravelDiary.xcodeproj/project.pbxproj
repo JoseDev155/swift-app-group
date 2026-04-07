@@ -13,6 +13,18 @@
 		F2FD00E72F85B0DD00390151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD00E52F85B0DD00390151 /* Main.storyboard */; };
 		F2FD00E92F85B0E000390151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FD00E82F85B0E000390151 /* Assets.xcassets */; };
 		F2FD00EC2F85B0E000390151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD00EA2F85B0E000390151 /* LaunchScreen.storyboard */; };
+		A2C100012F86BB0000000001 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B100012F86BB0000000001 /* RootTabBarController.swift */; };
+		A2C100022F86BB0000000002 /* TravelEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B100022F86BB0000000002 /* TravelEntry.swift */; };
+		A2C100032F86BB0000000003 /* TravelPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B100032F86BB0000000003 /* TravelPreferences.swift */; };
+		A2C100042F86BB0000000004 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B100042F86BB0000000004 /* Notifications.swift */; };
+		A2C100052F86BB0000000005 /* TravelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B100052F86BB0000000005 /* TravelStore.swift */; };
+		A2C100062F86BB0000000006 /* TravelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B100062F86BB0000000006 /* TravelListViewModel.swift */; };
+		A2C100072F86BB0000000007 /* TravelSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B100072F86BB0000000007 /* TravelSummaryViewModel.swift */; };
+		A2C100082F86BB0000000008 /* TravelSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B100082F86BB0000000008 /* TravelSettingsViewModel.swift */; };
+		A2C100092F86BB0000000009 /* TravelEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B100092F86BB0000000009 /* TravelEntryCell.swift */; };
+		A2C1000A2F86BB000000000A /* TravelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1000A2F86BB000000000A /* TravelListViewController.swift */; };
+		A2C1000B2F86BB000000000B /* TravelSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1000B2F86BB000000000B /* TravelSummaryViewController.swift */; };
+		A2C1000C2F86BB000000000C /* TravelSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1000C2F86BB000000000C /* TravelSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		F2FD00E82F85B0E000390151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2FD00EB2F85B0E000390151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2FD00ED2F85B0E000390151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B100012F86BB0000000001 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		A2B100022F86BB0000000002 /* TravelEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelEntry.swift; sourceTree = "<group>"; };
+		A2B100032F86BB0000000003 /* TravelPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPreferences.swift; sourceTree = "<group>"; };
+		A2B100042F86BB0000000004 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		A2B100052F86BB0000000005 /* TravelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelStore.swift; sourceTree = "<group>"; };
+		A2B100062F86BB0000000006 /* TravelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelListViewModel.swift; sourceTree = "<group>"; };
+		A2B100072F86BB0000000007 /* TravelSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelSummaryViewModel.swift; sourceTree = "<group>"; };
+		A2B100082F86BB0000000008 /* TravelSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelSettingsViewModel.swift; sourceTree = "<group>"; };
+		A2B100092F86BB0000000009 /* TravelEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelEntryCell.swift; sourceTree = "<group>"; };
+		A2B1000A2F86BB000000000A /* TravelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelListViewController.swift; sourceTree = "<group>"; };
+		A2B1000B2F86BB000000000B /* TravelSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelSummaryViewController.swift; sourceTree = "<group>"; };
+		A2B1000C2F86BB000000000C /* TravelSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,12 @@
 		F2FD00DE2F85B0DD00390151 /* TravelDiary */ = {
 			isa = PBXGroup;
 			children = (
+				A2D200012F86BB0000000001 /* App */,
+				A2D200022F86BB0000000002 /* Models */,
+				A2D200032F86BB0000000003 /* Services */,
+				A2D200042F86BB0000000004 /* ViewModels */,
+				A2D200052F86BB0000000005 /* Views */,
+				A2D200062F86BB0000000006 /* ViewControllers */,
 				F2FD00DF2F85B0DD00390151 /* AppDelegate.swift */,
 				F2FD00E12F85B0DD00390151 /* SceneDelegate.swift */,
 				F2FD00E32F85B0DD00390151 /* ViewController.swift */,
@@ -65,6 +95,60 @@
 				F2FD00ED2F85B0E000390151 /* Info.plist */,
 			);
 			path = TravelDiary;
+			sourceTree = "<group>";
+		};
+		A2D200012F86BB0000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A2B100012F86BB0000000001 /* RootTabBarController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A2D200022F86BB0000000002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2B100022F86BB0000000002 /* TravelEntry.swift */,
+				A2B100032F86BB0000000003 /* TravelPreferences.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A2D200032F86BB0000000003 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A2B100052F86BB0000000005 /* TravelStore.swift */,
+				A2B100042F86BB0000000004 /* Notifications.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A2D200042F86BB0000000004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A2B100062F86BB0000000006 /* TravelListViewModel.swift */,
+				A2B100072F86BB0000000007 /* TravelSummaryViewModel.swift */,
+				A2B100082F86BB0000000008 /* TravelSettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A2D200052F86BB0000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2B100092F86BB0000000009 /* TravelEntryCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2D200062F86BB0000000006 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2B1000A2F86BB000000000A /* TravelListViewController.swift */,
+				A2B1000B2F86BB000000000B /* TravelSummaryViewController.swift */,
+				A2B1000C2F86BB000000000C /* TravelSettingsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +222,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C100012F86BB0000000001 /* RootTabBarController.swift in Sources */,
+				A2C1000A2F86BB000000000A /* TravelListViewController.swift in Sources */,
+				A2C1000B2F86BB000000000B /* TravelSummaryViewController.swift in Sources */,
+				A2C1000C2F86BB000000000C /* TravelSettingsViewController.swift in Sources */,
+				A2C100092F86BB0000000009 /* TravelEntryCell.swift in Sources */,
+				A2C100062F86BB0000000006 /* TravelListViewModel.swift in Sources */,
+				A2C100072F86BB0000000007 /* TravelSummaryViewModel.swift in Sources */,
+				A2C100082F86BB0000000008 /* TravelSettingsViewModel.swift in Sources */,
+				A2C100022F86BB0000000002 /* TravelEntry.swift in Sources */,
+				A2C100032F86BB0000000003 /* TravelPreferences.swift in Sources */,
+				A2C100052F86BB0000000005 /* TravelStore.swift in Sources */,
+				A2C100042F86BB0000000004 /* Notifications.swift in Sources */,
 				F2FD00E42F85B0DD00390151 /* ViewController.swift in Sources */,
 				F2FD00E02F85B0DD00390151 /* AppDelegate.swift in Sources */,
 				F2FD00E22F85B0DD00390151 /* SceneDelegate.swift in Sources */,
@@ -293,7 +389,6 @@
 				INFOPLIST_FILE = TravelDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +415,6 @@
 				INFOPLIST_FILE = TravelDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
