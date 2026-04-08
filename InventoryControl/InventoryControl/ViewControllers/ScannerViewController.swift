@@ -97,28 +97,39 @@ final class ScannerViewController: UIViewController {
             break
         }
 
-        let alert = UIAlertController(title: "Escaneo rápido", message: "Puedes ingresar el ID o cambiar el nombre.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Escaneo rápido", message: "Puedes ingresar el ID, el nombre o la cantidad.", preferredStyle: .alert)
         alert.addTextField { textField in
             textField.placeholder = "ID del producto (opcional)"
         }
         alert.addTextField { textField in
             textField.placeholder = "Nombre del producto"
         }
+        alert.addTextField { textField in
+            textField.placeholder = "Cantidad (opcional)"
+            textField.keyboardType = .numberPad
+        }
 
         let confirmAction = UIAlertAction(title: "Agregar", style: .default) { [weak self] _ in
             guard let self = self else { return }
-            let idText = alert.textFields?.first?.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-            let nameText = alert.textFields?.last?.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+            let idText = alert.textFields?.first?.text
+            let nameText = alert.textFields?.dropFirst().first?.text
+            let quantityText = alert.textFields?.last?.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+            let requestedUnits = Int(quantityText).flatMap { $0 > 0 ? $0 : nil }
 
-            switch self.viewModel.simulateScan(productId: idText, customName: nameText) {
-            case .added(let item):
-                self.updateInfo(text: "Agregado: \(item.name) en pasillo \(item.aisle)")
+            switch self.viewModel.simulateScan(productId: idText, name: nameText, requestedUnits: requestedUnits) {
+            case .purchased(let item, let requested, let delivered):
+                self.updateInfo(text: "Venta: \(item.name) · Entregadas \(delivered) · Stock \(item.stock)")
                 self.animateCard()
-            case .updated(let item):
-                self.updateInfo(text: "Actualizado: \(item.name) · Stock \(item.stock)")
-                self.animateCard()
+                if delivered < requested {
+                    self.presentStatusAlert(
+                        title: "Stock insuficiente",
+                        message: "Se solicitaron \(requested) unidades, pero solo hay \(delivered) disponibles."
+                    )
+                }
+            case .outOfStock(let item):
+                self.presentStatusAlert(title: "Stock agotado", message: "No hay unidades disponibles de \(item.name).")
             case .notFound:
-                self.presentStatusAlert(title: "ID no encontrado", message: "No existe un producto con ese ID en el inventario.")
+                self.presentStatusAlert(title: "Producto no encontrado", message: "No existe un producto con ese ID o nombre en el inventario.")
             }
         }
 
