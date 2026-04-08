@@ -42,9 +42,9 @@ final class SettingsViewModel {
             return "Por día: sin registros."
         }
 
-        let lines = summary.keys.sorted(by: >).map { key in
+        let lines = summary.keys.sorted(by: >).map { (key: String) -> String in
             let modes = summary[key] ?? [:]
-            let details = PomodoroMode.allCases.map { mode in
+            let details = PomodoroMode.allCases.map { (mode: PomodoroMode) -> String in
                 "\(mode.title): \(modes[mode, default: 0])"
             }
             let detailText = details.joined(separator: " · ")
