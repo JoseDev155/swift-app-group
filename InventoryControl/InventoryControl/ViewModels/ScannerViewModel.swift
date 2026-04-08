@@ -13,6 +13,12 @@ enum ScanAvailability {
     case noStock
 }
 
+enum ScanResult {
+    case added(InventoryItem)
+    case updated(InventoryItem)
+    case notFound
+}
+
 final class ScannerViewModel {
     private let store: InventoryStoreProtocol
 
@@ -32,12 +38,41 @@ final class ScannerViewModel {
         return .available
     }
 
-    func simulateScan(customName: String?) -> InventoryItem? {
+    func simulateScan(productId: String?, customName: String?) -> ScanResult {
+        if let productId = productId, !productId.isEmpty {
+            guard let item = store.items.first(where: { $0.id == productId }) else {
+                return .notFound
+            }
+
+            let newStock = item.stock + 1
+            store.updateItem(
+                id: item.id,
+                name: item.name,
+                aisle: item.aisle,
+                section: item.section,
+                stock: newStock,
+                minStock: item.minStock,
+                note: item.note
+            )
+
+            let updatedItem = InventoryItem(
+                id: item.id,
+                name: item.name,
+                aisle: item.aisle,
+                section: item.section,
+                stock: newStock,
+                minStock: item.minStock,
+                note: item.note,
+                updatedAt: Date()
+            )
+            return .updated(updatedItem)
+        }
+
         let names = ["Cajas", "Bebidas", "Detergente", "Café", "Galletas", "Cuadernos", "Papel", "Lámparas"]
         let aisles = Array(Set(store.items.map { $0.aisle })).sorted()
 
         guard let aisle = aisles.randomElement() else {
-            return nil
+            return .notFound
         }
 
         let sections = Array(Set(store.items.filter { $0.aisle == aisle }.map { $0.section })).sorted()
@@ -47,6 +82,7 @@ final class ScannerViewModel {
         let stock = Int.random(in: 1...20)
         let minStock = max(1, store.profile.defaultMinStock)
 
-        return store.addItem(name: name, aisle: aisle, section: section, stock: stock, minStock: minStock, note: "Escaneo rápido")
+        let item = store.addItem(name: name, aisle: aisle, section: section, stock: stock, minStock: minStock, note: "Escaneo rápido")
+        return .added(item)
     }
 }

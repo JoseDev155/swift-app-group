@@ -97,20 +97,29 @@ final class ScannerViewController: UIViewController {
             break
         }
 
-        let alert = UIAlertController(title: "Escaneo rápido", message: "Puedes cambiar el nombre si lo deseas.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Escaneo rápido", message: "Puedes ingresar el ID o cambiar el nombre.", preferredStyle: .alert)
+        alert.addTextField { textField in
+            textField.placeholder = "ID del producto (opcional)"
+        }
         alert.addTextField { textField in
             textField.placeholder = "Nombre del producto"
         }
 
         let confirmAction = UIAlertAction(title: "Agregar", style: .default) { [weak self] _ in
             guard let self = self else { return }
-            let nameText = alert.textFields?.first?.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-            guard let item = self.viewModel.simulateScan(customName: nameText) else {
-                self.presentStatusAlert(title: "Escaneo no disponible", message: "No hay pasillos válidos para registrar el producto.")
-                return
+            let idText = alert.textFields?.first?.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+            let nameText = alert.textFields?.last?.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+
+            switch self.viewModel.simulateScan(productId: idText, customName: nameText) {
+            case .added(let item):
+                self.updateInfo(text: "Agregado: \(item.name) en pasillo \(item.aisle)")
+                self.animateCard()
+            case .updated(let item):
+                self.updateInfo(text: "Actualizado: \(item.name) · Stock \(item.stock)")
+                self.animateCard()
+            case .notFound:
+                self.presentStatusAlert(title: "ID no encontrado", message: "No existe un producto con ese ID en el inventario.")
             }
-            self.updateInfo(text: "Agregado: \(item.name) en pasillo \(item.aisle)")
-            self.animateCard()
         }
 
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel))
