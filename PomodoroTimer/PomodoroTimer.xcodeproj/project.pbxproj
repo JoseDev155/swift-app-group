@@ -13,6 +13,21 @@
 		F2FD01A72F85D8B200390151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD01A52F85D8B200390151 /* Main.storyboard */; };
 		F2FD01A92F85D8B500390151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FD01A82F85D8B500390151 /* Assets.xcassets */; };
 		F2FD01AC2F85D8B500390151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD01AA2F85D8B500390151 /* LaunchScreen.storyboard */; };
+		A9C000012F87200000000001 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B100012F87200000000001 /* RootTabBarController.swift */; };
+		A9C000022F87200000000002 /* EntryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B100022F87200000000002 /* EntryContext.swift */; };
+		A9C000032F87200000000003 /* PomodoroMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B100032F87200000000003 /* PomodoroMode.swift */; };
+		A9C000042F87200000000004 /* PomodoroSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B100042F87200000000004 /* PomodoroSession.swift */; };
+		A9C000052F87200000000005 /* PomodoroSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B100052F87200000000005 /* PomodoroSettings.swift */; };
+		A9C000062F87200000000006 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B100062F87200000000006 /* Notifications.swift */; };
+		A9C000072F87200000000007 /* PomodoroStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B100072F87200000000007 /* PomodoroStore.swift */; };
+		A9C000082F87200000000008 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B100082F87200000000008 /* TimerViewModel.swift */; };
+		A9C000092F87200000000009 /* SessionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B100092F87200000000009 /* SessionsViewModel.swift */; };
+		A9C0000A2F8720000000000A /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1000A2F8720000000000A /* SettingsViewModel.swift */; };
+		A9C0000B2F8720000000000B /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1000B2F8720000000000B /* ProgressRingView.swift */; };
+		A9C0000C2F8720000000000C /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1000C2F8720000000000C /* SessionCell.swift */; };
+		A9C0000D2F8720000000000D /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1000D2F8720000000000D /* TimerViewController.swift */; };
+		A9C0000E2F8720000000000E /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1000E2F8720000000000E /* SessionsViewController.swift */; };
+		A9C0000F2F8720000000000F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1000F2F8720000000000F /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +39,21 @@
 		F2FD01A82F85D8B500390151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2FD01AB2F85D8B500390151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2FD01AD2F85D8B500390151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B100012F87200000000001 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		A9B100022F87200000000002 /* EntryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryContext.swift; sourceTree = "<group>"; };
+		A9B100032F87200000000003 /* PomodoroMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroMode.swift; sourceTree = "<group>"; };
+		A9B100042F87200000000004 /* PomodoroSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroSession.swift; sourceTree = "<group>"; };
+		A9B100052F87200000000005 /* PomodoroSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroSettings.swift; sourceTree = "<group>"; };
+		A9B100062F87200000000006 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		A9B100072F87200000000007 /* PomodoroStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroStore.swift; sourceTree = "<group>"; };
+		A9B100082F87200000000008 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		A9B100092F87200000000009 /* SessionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewModel.swift; sourceTree = "<group>"; };
+		A9B1000A2F8720000000000A /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A9B1000B2F8720000000000B /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
+		A9B1000C2F8720000000000C /* SessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
+		A9B1000D2F8720000000000D /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		A9B1000E2F8720000000000E /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
+		A9B1000F2F8720000000000F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,12 @@
 		F2FD019E2F85D8B200390151 /* PomodoroTimer */ = {
 			isa = PBXGroup;
 			children = (
+				A9D200012F87200000000001 /* App */,
+				A9D200022F87200000000002 /* Models */,
+				A9D200032F87200000000003 /* Services */,
+				A9D200042F87200000000004 /* ViewModels */,
+				A9D200052F87200000000005 /* Views */,
+				A9D200062F87200000000006 /* ViewControllers */,
 				F2FD019F2F85D8B200390151 /* AppDelegate.swift */,
 				F2FD01A12F85D8B200390151 /* SceneDelegate.swift */,
 				F2FD01A32F85D8B200390151 /* ViewController.swift */,
@@ -65,6 +101,63 @@
 				F2FD01AD2F85D8B500390151 /* Info.plist */,
 			);
 			path = PomodoroTimer;
+			sourceTree = "<group>";
+		};
+		A9D200012F87200000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A9B100012F87200000000001 /* RootTabBarController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A9D200022F87200000000002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9B100022F87200000000002 /* EntryContext.swift */,
+				A9B100032F87200000000003 /* PomodoroMode.swift */,
+				A9B100042F87200000000004 /* PomodoroSession.swift */,
+				A9B100052F87200000000005 /* PomodoroSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9D200032F87200000000003 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A9B100062F87200000000006 /* Notifications.swift */,
+				A9B100072F87200000000007 /* PomodoroStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A9D200042F87200000000004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A9B100082F87200000000008 /* TimerViewModel.swift */,
+				A9B100092F87200000000009 /* SessionsViewModel.swift */,
+				A9B1000A2F8720000000000A /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A9D200052F87200000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9B1000B2F8720000000000B /* ProgressRingView.swift */,
+				A9B1000C2F8720000000000C /* SessionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9D200062F87200000000006 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9B1000D2F8720000000000D /* TimerViewController.swift */,
+				A9B1000E2F8720000000000E /* SessionsViewController.swift */,
+				A9B1000F2F8720000000000F /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +231,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C000012F87200000000001 /* RootTabBarController.swift in Sources */,
+				A9C0000D2F8720000000000D /* TimerViewController.swift in Sources */,
+				A9C0000E2F8720000000000E /* SessionsViewController.swift in Sources */,
+				A9C0000F2F8720000000000F /* SettingsViewController.swift in Sources */,
+				A9C0000B2F8720000000000B /* ProgressRingView.swift in Sources */,
+				A9C0000C2F8720000000000C /* SessionCell.swift in Sources */,
+				A9C000082F87200000000008 /* TimerViewModel.swift in Sources */,
+				A9C000092F87200000000009 /* SessionsViewModel.swift in Sources */,
+				A9C0000A2F8720000000000A /* SettingsViewModel.swift in Sources */,
+				A9C000062F87200000000006 /* Notifications.swift in Sources */,
+				A9C000072F87200000000007 /* PomodoroStore.swift in Sources */,
+				A9C000022F87200000000002 /* EntryContext.swift in Sources */,
+				A9C000032F87200000000003 /* PomodoroMode.swift in Sources */,
+				A9C000042F87200000000004 /* PomodoroSession.swift in Sources */,
+				A9C000052F87200000000005 /* PomodoroSettings.swift in Sources */,
 				F2FD01A42F85D8B200390151 /* ViewController.swift in Sources */,
 				F2FD01A02F85D8B200390151 /* AppDelegate.swift in Sources */,
 				F2FD01A22F85D8B200390151 /* SceneDelegate.swift in Sources */,
@@ -293,7 +401,6 @@
 				INFOPLIST_FILE = PomodoroTimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +427,6 @@
 				INFOPLIST_FILE = PomodoroTimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
