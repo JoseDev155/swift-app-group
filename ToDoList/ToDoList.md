@@ -5,7 +5,7 @@ ToDoList es una app iOS para crear tareas con prioridad, marcar completadas y co
 ## Funcionalidades principales
 - Lista de tareas con Table View y celdas personalizadas.
 - CRUD completo: crear, editar y eliminar tareas.
-- Prioridades Alta, Media y Baja.
+- Prioridades: alta, media y baja.
 - Vencimientos con cambio de color en tiempo real.
 - Persistencia en UserDefaults.
 - Sincronización entre pantallas con NotificationCenter.
@@ -21,7 +21,7 @@ ToDoList es una app iOS para crear tareas con prioridad, marcar completadas y co
 - `TaskListViewController` para listado y CRUD.
 - `TaskSummaryViewController` para resumen por prioridad.
 - `TaskStore` como fuente de datos y persistencia.
-- `TaskCell` con indicador animado para vencidas.
+- `TaskCell` con indicador animado para tareas vencidas.
 
 ## Interacción
 - Botón "+" para crear tareas.

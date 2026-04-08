@@ -1,11 +1,11 @@
 # 4. Diario de Viajes
 
-TravelDiary es una app iOS para registrar paises visitados, guardar notas y visualizar un resumen anual. La navegación principal se organiza con un Tab Bar Controller.
+TravelDiary es una app iOS para registrar países visitados, guardar notas y visualizar un resumen anual. La navegación principal se organiza con un Tab Bar Controller.
 
 ## Funcionalidades principales
 - Lista de viajes con Table View y celdas personalizadas.
 - CRUD completo: crear, editar y eliminar viajes.
-- Vista de detalles expandible con animación por Core Animation.
+- Vista de detalles expandible con animación con Core Animation.
 - Resumen por año usando arreglos y diccionarios.
 - Persistencia de preferencias (unidad y moneda) con UserDefaults.
 - Sincronización de cambios entre pantallas con NotificationCenter.
