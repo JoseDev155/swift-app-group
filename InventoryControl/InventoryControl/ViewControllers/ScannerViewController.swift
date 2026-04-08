@@ -126,8 +126,8 @@ final class ScannerViewController: UIViewController {
                         message: "Se solicitaron \(requested) unidades, pero solo hay \(delivered) disponibles."
                     )
                 }
-            case .outOfStock(let item):
-                self.presentStatusAlert(title: "Stock agotado", message: "No hay unidades disponibles de \(item.name).")
+            case .outOfStock(let item, let requested):
+                self.presentStatusAlert(title: "Stock agotado", message: "Se solicitaron \(requested) unidades, pero no hay stock disponible de \(item.name).")
             case .notFound:
                 self.presentStatusAlert(title: "Producto no encontrado", message: "No existe un producto con ese ID o nombre en el inventario.")
             }

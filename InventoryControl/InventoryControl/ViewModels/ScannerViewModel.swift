@@ -16,14 +16,16 @@ enum ScanAvailability {
 enum ScanResult {
     case purchased(item: InventoryItem, requested: Int, delivered: Int)
     case notFound
-    case outOfStock(InventoryItem)
+    case outOfStock(item: InventoryItem, requested: Int)
 }
 
 final class ScannerViewModel {
     private let store: InventoryStoreProtocol
+    private let historyStore: ScanHistoryStoreProtocol
 
-    init(store: InventoryStoreProtocol = InventoryStore.shared) {
+    init(store: InventoryStoreProtocol = InventoryStore.shared, historyStore: ScanHistoryStoreProtocol = ScanHistoryStore.shared) {
         self.store = store
+        self.historyStore = historyStore
     }
 
     func scanAvailability() -> ScanAvailability {
@@ -55,11 +57,13 @@ final class ScannerViewModel {
             return .notFound
         }
 
+        let requested = (requestedUnits ?? Int.random(in: 1...50))
+
         guard item.stock > 0 else {
-            return .outOfStock(item)
+            _ = historyStore.addRecord(item: item, requested: requested, delivered: 0)
+            return .outOfStock(item: item, requested: requested)
         }
 
-        let requested = (requestedUnits ?? Int.random(in: 1...50))
         let delivered = min(requested, item.stock)
         let newStock = max(item.stock - delivered, 0)
 
@@ -84,6 +88,7 @@ final class ScannerViewModel {
             updatedAt: Date()
         )
 
+        _ = historyStore.addRecord(item: updatedItem, requested: requested, delivered: delivered)
         return .purchased(item: updatedItem, requested: requested, delivered: delivered)
     }
 }

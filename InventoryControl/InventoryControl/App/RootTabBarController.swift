@@ -18,9 +18,12 @@ final class RootTabBarController: UITabBarController {
         let scannerController = UINavigationController(rootViewController: ScannerViewController())
         scannerController.tabBarItem = UITabBarItem(title: "Escáner", image: UIImage(systemName: "barcode.viewfinder"), tag: 1)
 
-        let profileController = UINavigationController(rootViewController: ProfileViewController())
-        profileController.tabBarItem = UITabBarItem(title: "Perfil", image: UIImage(systemName: "person.crop.circle"), tag: 2)
+        let historyController = UINavigationController(rootViewController: ScanHistoryViewController())
+        historyController.tabBarItem = UITabBarItem(title: "Historial", image: UIImage(systemName: "clock.arrow.circlepath"), tag: 2)
 
-        viewControllers = [inventoryController, scannerController, profileController]
+        let profileController = UINavigationController(rootViewController: ProfileViewController())
+        profileController.tabBarItem = UITabBarItem(title: "Perfil", image: UIImage(systemName: "person.crop.circle"), tag: 3)
+
+        viewControllers = [inventoryController, scannerController, historyController, profileController]
     }
 }

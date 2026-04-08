@@ -3,7 +3,7 @@
 InventoryControl es una app iOS para registrar productos, ubicarlos por pasillos y secciones, y detectar bajo stock. La navegación principal se organiza con un Tab Bar Controller.
 
 ## Funcionalidades principales
-- Tab Bar con Inventario, Escáner y Perfil.
+- Tab Bar con Inventario, Escáner, Historial y Perfil.
 - CRUD completo: crear, editar y eliminar productos.
 - Diccionarios anidados para agrupar productos por pasillo y sección.
 - Persistencia local con UserDefaults.
@@ -21,6 +21,7 @@ InventoryControl es una app iOS para registrar productos, ubicarlos por pasillos
 - `InventoryListViewController` para el listado y CRUD.
 - `ScannerViewController` para simular escaneos rápidos.
 - `ProfileViewController` para datos del negocio y resúmenes.
+- `ScanHistoryViewController` para el historial de escaneos.
 - `InventoryStore` como fuente de datos y persistencia.
 - `InventoryItemCell` con indicador de bajo stock.
 
