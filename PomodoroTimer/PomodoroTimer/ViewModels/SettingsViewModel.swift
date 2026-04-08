@@ -28,7 +28,7 @@ final class SettingsViewModel {
             return "Sesiones por modo: sin registros."
         }
 
-        let lines = PomodoroMode.allCases.map { mode in
+        let lines = PomodoroMode.allCases.map { (mode: PomodoroMode) -> String in
             let count = summary[mode, default: 0]
             return "\(mode.title): \(count)"
         }
