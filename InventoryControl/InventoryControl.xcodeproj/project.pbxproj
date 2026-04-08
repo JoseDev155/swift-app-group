@@ -27,6 +27,11 @@
 		A7C0000C2F8710000000000C /* InventoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B1000C2F8710000000000C /* InventoryListViewController.swift */; };
 		A7C0000D2F8710000000000D /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B1000D2F8710000000000D /* ScannerViewController.swift */; };
 		A7C0000E2F8710000000000E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B1000E2F8710000000000E /* ProfileViewController.swift */; };
+		A8C000012F87120000000001 /* ScanRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B100012F87120000000001 /* ScanRecord.swift */; };
+		A8C000022F87120000000002 /* ScanHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B100022F87120000000002 /* ScanHistoryStore.swift */; };
+		A8C000032F87120000000003 /* ScanHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B100032F87120000000003 /* ScanHistoryViewModel.swift */; };
+		A8C000042F87120000000004 /* ScanHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B100042F87120000000004 /* ScanHistoryCell.swift */; };
+		A8C000052F87120000000005 /* ScanHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B100052F87120000000005 /* ScanHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,11 @@
 		A7B1000C2F8710000000000C /* InventoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListViewController.swift; sourceTree = "<group>"; };
 		A7B1000D2F8710000000000D /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		A7B1000E2F8710000000000E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A8B100012F87120000000001 /* ScanRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanRecord.swift; sourceTree = "<group>"; };
+		A8B100022F87120000000002 /* ScanHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHistoryStore.swift; sourceTree = "<group>"; };
+		A8B100032F87120000000003 /* ScanHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHistoryViewModel.swift; sourceTree = "<group>"; };
+		A8B100042F87120000000004 /* ScanHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHistoryCell.swift; sourceTree = "<group>"; };
+		A8B100052F87120000000005 /* ScanHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,7 @@
 				A7B100022F87100000000002 /* EntryContext.swift */,
 				A7B100032F87100000000003 /* InventoryItem.swift */,
 				A7B100042F87100000000004 /* InventoryProfile.swift */,
+				A8B100012F87120000000001 /* ScanRecord.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 			children = (
 				A7B100052F87100000000005 /* Notifications.swift */,
 				A7B100062F87100000000006 /* InventoryStore.swift */,
+				A8B100022F87120000000002 /* ScanHistoryStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -134,6 +146,7 @@
 				A7B100072F87100000000007 /* InventoryListViewModel.swift */,
 				A7B100082F87100000000008 /* ScannerViewModel.swift */,
 				A7B100092F87100000000009 /* ProfileViewModel.swift */,
+				A8B100032F87120000000003 /* ScanHistoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -143,6 +156,7 @@
 			children = (
 				A7B1000A2F8710000000000A /* InventoryItemCell.swift */,
 				A7B1000B2F8710000000000B /* InventorySummaryView.swift */,
+				A8B100042F87120000000004 /* ScanHistoryCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +167,7 @@
 				A7B1000C2F8710000000000C /* InventoryListViewController.swift */,
 				A7B1000D2F8710000000000D /* ScannerViewController.swift */,
 				A7B1000E2F8710000000000E /* ProfileViewController.swift */,
+				A8B100052F87120000000005 /* ScanHistoryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -232,16 +247,21 @@
 				A7C0000C2F8710000000000C /* InventoryListViewController.swift in Sources */,
 				A7C0000D2F8710000000000D /* ScannerViewController.swift in Sources */,
 				A7C0000E2F8710000000000E /* ProfileViewController.swift in Sources */,
+				A8C000052F87120000000005 /* ScanHistoryViewController.swift in Sources */,
 				A7C0000A2F8710000000000A /* InventoryItemCell.swift in Sources */,
 				A7C0000B2F8710000000000B /* InventorySummaryView.swift in Sources */,
+				A8C000042F87120000000004 /* ScanHistoryCell.swift in Sources */,
 				A7C000072F87100000000007 /* InventoryListViewModel.swift in Sources */,
 				A7C000082F87100000000008 /* ScannerViewModel.swift in Sources */,
 				A7C000092F87100000000009 /* ProfileViewModel.swift in Sources */,
+				A8C000032F87120000000003 /* ScanHistoryViewModel.swift in Sources */,
 				A7C000052F87100000000005 /* Notifications.swift in Sources */,
 				A7C000062F87100000000006 /* InventoryStore.swift in Sources */,
+				A8C000022F87120000000002 /* ScanHistoryStore.swift in Sources */,
 				A7C000022F87100000000002 /* EntryContext.swift in Sources */,
 				A7C000032F87100000000003 /* InventoryItem.swift in Sources */,
 				A7C000042F87100000000004 /* InventoryProfile.swift in Sources */,
+				A8C000012F87120000000001 /* ScanRecord.swift in Sources */,
 				F2FD01842F85CB5600390151 /* ViewController.swift in Sources */,
 				F2FD01802F85CB5600390151 /* AppDelegate.swift in Sources */,
 				F2FD01822F85CB5600390151 /* SceneDelegate.swift in Sources */,
