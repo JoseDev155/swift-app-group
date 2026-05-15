@@ -12,9 +12,9 @@ HydrationSleep es una app iOS para registrar tomas de agua y horas de sueño, co
 - Alertas para validación y confirmaciones.
 
 ## Arquitectura y patrones
-- MVVM para separar la logica de presentacion del UI.
+- MVVM para separar la lógica de presentación del UI.
 - Clean Architecture con capas claras: modelos, servicios, view models y vistas/controladores.
-- Clean Code: componentes pequenos, responsabilidades unicas y dependencias simples.
+- Clean Code: componentes pequeños, responsabilidades únicas y dependencias simples.
 
 ## Componentes clave
 - `RootTabBarController` como entrada de la app.

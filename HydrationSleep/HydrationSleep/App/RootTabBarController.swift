@@ -16,7 +16,7 @@ final class RootTabBarController: UITabBarController {
         hydrationController.tabBarItem = UITabBarItem(title: "Agua", image: UIImage(systemName: "drop.fill"), tag: 0)
 
         let sleepController = UINavigationController(rootViewController: SleepListViewController())
-        sleepController.tabBarItem = UITabBarItem(title: "Sueno", image: UIImage(systemName: "bed.double.fill"), tag: 1)
+        sleepController.tabBarItem = UITabBarItem(title: "Sueño", image: UIImage(systemName: "bed.double.fill"), tag: 1)
 
         let settingsController = UINavigationController(rootViewController: SettingsViewController())
         settingsController.tabBarItem = UITabBarItem(title: "Ajustes", image: UIImage(systemName: "gearshape.fill"), tag: 2)

@@ -127,7 +127,7 @@ final class HydrationListViewController: UIViewController {
             let noteText = alert.textFields?.last?.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 
             guard let milliliters = Int(mlText), milliliters > 0 else {
-                self.presentValidationAlert(message: "Ingresa una cantidad valida en mililitros.")
+                self.presentValidationAlert(message: "Ingresa una cantidad válida en mililitros.")
                 return
             }
 
@@ -157,7 +157,7 @@ final class HydrationListViewController: UIViewController {
     }
 
     private func presentValidationAlert(message: String) {
-        let alert = UIAlertController(title: "Datos invalidos", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Datos inválidos", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Entendido", style: .default))
         present(alert, animated: true)
     }

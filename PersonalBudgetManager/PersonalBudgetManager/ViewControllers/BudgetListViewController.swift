@@ -39,7 +39,7 @@ final class BudgetListViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .always
 
         navigationItem.rightBarButtonItems = [
-            UIBarButtonItem(title: "Limite", style: .plain, target: self, action: #selector(editLimit)),
+            UIBarButtonItem(title: "Límite", style: .plain, target: self, action: #selector(editLimit)),
             UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addEntry))
         ]
         navigationItem.leftBarButtonItem = editButtonItem
@@ -116,11 +116,11 @@ final class BudgetListViewController: UIViewController {
     private func updateSummary(animated: Bool) {
         let limitText = formatter.string(from: NSNumber(value: viewModel.monthlyLimit)) ?? "0"
         let totalExpense = formatter.string(from: NSNumber(value: viewModel.total(for: .expense))) ?? "0"
-        limitLabel.text = "Limite mensual: \(limitText)"
+        limitLabel.text = "Límite mensual: \(limitText)"
         totalLabel.text = "Total gastos: \(totalExpense)"
 
         if viewModel.exceedsLimit() {
-            warningView.show(message: "Limite superado. Revisa tus gastos.", animated: animated)
+            warningView.show(message: "Límite superado. Revisa tus gastos.", animated: animated)
             presentLimitAlertIfNeeded()
         } else {
             warningView.hide()
@@ -132,8 +132,8 @@ final class BudgetListViewController: UIViewController {
         guard !hasShownLimitAlert else { return }
         hasShownLimitAlert = true
         let alert = UIAlertController(
-            title: "Limite superado",
-            message: "Has excedido el limite de gastos definido.",
+            title: "Límite superado",
+            message: "Has excedido el límite de gastos definido.",
             preferredStyle: .alert
         )
         alert.addAction(UIAlertAction(title: "Entendido", style: .default))
@@ -153,7 +153,7 @@ final class BudgetListViewController: UIViewController {
     }
 
     @objc private func editLimit() {
-        let alert = UIAlertController(title: "Limite mensual", message: "Define tu limite de gastos.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Límite mensual", message: "Define tu límite de gastos.", preferredStyle: .alert)
         alert.addTextField { textField in
             textField.placeholder = "Monto"
             textField.keyboardType = .decimalPad
@@ -164,7 +164,7 @@ final class BudgetListViewController: UIViewController {
             guard let self = self else { return }
             let limitText = alert.textFields?.first?.text ?? ""
             guard let limit = Double(limitText.replacingOccurrences(of: ",", with: ".")), limit > 0 else {
-                self.presentValidationAlert(message: "Ingresa un monto valido.")
+                self.presentValidationAlert(message: "Ingresa un monto válido.")
                 return
             }
             self.viewModel.setMonthlyLimit(limit)
@@ -179,7 +179,7 @@ final class BudgetListViewController: UIViewController {
     private func presentEntryForm(title: String, entry: BudgetEntry?, type: EntryType, index: Int?) {
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         alert.addTextField { textField in
-            textField.placeholder = "Titulo"
+            textField.placeholder = "Título"
             textField.text = entry?.title
         }
         alert.addTextField { textField in
@@ -190,7 +190,7 @@ final class BudgetListViewController: UIViewController {
             }
         }
         alert.addTextField { textField in
-            textField.placeholder = "Categoria"
+            textField.placeholder = "Categoría"
             textField.text = entry?.category
         }
 
@@ -205,7 +205,7 @@ final class BudgetListViewController: UIViewController {
                 return
             }
             guard let amount = Double(amountText.replacingOccurrences(of: ",", with: ".")), amount > 0 else {
-                self.presentValidationAlert(message: "Ingresa un monto valido.")
+                self.presentValidationAlert(message: "Ingresa un monto válido.")
                 return
             }
 
@@ -240,7 +240,7 @@ final class BudgetListViewController: UIViewController {
     }
 
     private func presentValidationAlert(message: String) {
-        let alert = UIAlertController(title: "Datos invalidos", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Datos inválidos", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Entendido", style: .default))
         present(alert, animated: true)
     }

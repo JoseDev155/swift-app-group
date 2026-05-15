@@ -83,7 +83,7 @@ final class TravelListViewController: UIViewController {
     private func presentEntryForm(title: String, entry: TravelEntry?, index: Int?) {
         let alert = UIAlertController(title: title, message: "Fecha: yyyy-MM-dd", preferredStyle: .alert)
         alert.addTextField { textField in
-            textField.placeholder = "Pais"
+            textField.placeholder = "País"
             textField.text = entry?.country
         }
         alert.addTextField { textField in
@@ -107,12 +107,12 @@ final class TravelListViewController: UIViewController {
             let dateText = alert.textFields?[3].text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 
             guard !countryText.isEmpty else {
-                self.presentValidationAlert(message: "El pais es obligatorio.")
+                self.presentValidationAlert(message: "El país es obligatorio.")
                 return
             }
 
             guard let date = self.dateFormatter.date(from: dateText) else {
-                self.presentValidationAlert(message: "Fecha invalida. Usa yyyy-MM-dd.")
+                self.presentValidationAlert(message: "Fecha inválida. Usa yyyy-MM-dd.")
                 return
             }
 
@@ -146,7 +146,7 @@ final class TravelListViewController: UIViewController {
     }
 
     private func presentValidationAlert(message: String) {
-        let alert = UIAlertController(title: "Datos invalidos", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Datos inválidos", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Entendido", style: .default))
         present(alert, animated: true)
     }

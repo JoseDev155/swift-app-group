@@ -118,7 +118,7 @@ extension ReportsViewController: UITableViewDataSource {
         if section == 0 {
             return "Resumen"
         }
-        return "Gastos por categoria"
+        return "Gastos por categoría"
     }
 }
 

@@ -22,7 +22,7 @@ final class HabitsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Habitos"
+        title = "Hábitos"
         view.backgroundColor = .systemBackground
         navigationItem.largeTitleDisplayMode = .always
         navigationItem.rightBarButtonItem = UIBarButtonItem(
@@ -58,13 +58,13 @@ final class HabitsListViewController: UIViewController {
     }
 
     @objc private func addHabit() {
-        presentHabitForm(title: "Nuevo habito", habit: nil, index: nil)
+        presentHabitForm(title: "Nuevo hábito", habit: nil, index: nil)
     }
 
     private func presentHabitForm(title: String, habit: Habit?, index: Int?) {
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         alert.addTextField { textField in
-            textField.placeholder = "Titulo"
+            textField.placeholder = "Título"
             textField.text = habit?.title
         }
         alert.addTextField { textField in
@@ -149,7 +149,7 @@ extension HabitsListViewController: UITableViewDelegate {
         let editAction = UIContextualAction(style: .normal, title: "Editar") { [weak self] _, _, completion in
             guard let self = self else { return }
             let habit = self.viewModel.habit(at: indexPath.row)
-            self.presentHabitForm(title: "Editar habito", habit: habit, index: indexPath.row)
+            self.presentHabitForm(title: "Editar hábito", habit: habit, index: indexPath.row)
             completion(true)
         }
         editAction.backgroundColor = .systemBlue

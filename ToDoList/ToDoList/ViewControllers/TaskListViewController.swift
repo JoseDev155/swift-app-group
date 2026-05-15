@@ -99,7 +99,7 @@ final class TaskListViewController: UIViewController {
     private func presentTaskForm(title: String, task: TaskItem?, index: Int?) {
         let alert = UIAlertController(title: title, message: "Formato de fecha: yyyy-MM-dd HH:mm", preferredStyle: .alert)
         alert.addTextField { textField in
-            textField.placeholder = "Titulo"
+            textField.placeholder = "Título"
             textField.text = task?.title
         }
         alert.addTextField { textField in
@@ -107,7 +107,7 @@ final class TaskListViewController: UIViewController {
             textField.text = task?.detail
         }
         alert.addTextField { textField in
-            textField.placeholder = "Fecha limite"
+            textField.placeholder = "Fecha límite"
             textField.text = task.map { self.dateFormatter.string(from: $0.dueDate) }
         }
         alert.addTextField { textField in
@@ -123,17 +123,17 @@ final class TaskListViewController: UIViewController {
             let priorityText = alert.textFields?[3].text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 
             guard !titleText.isEmpty else {
-                self.presentValidationAlert(message: "El titulo es obligatorio.")
+                self.presentValidationAlert(message: "El título es obligatorio.")
                 return
             }
 
             guard let dueDate = self.dateFormatter.date(from: dateText) else {
-                self.presentValidationAlert(message: "Fecha invalida. Usa yyyy-MM-dd HH:mm.")
+                self.presentValidationAlert(message: "Fecha inválida. Usa yyyy-MM-dd HH:mm.")
                 return
             }
 
             guard let priority = self.priority(from: priorityText) else {
-                self.presentValidationAlert(message: "Prioridad invalida. Usa Alta, Media o Baja.")
+                self.presentValidationAlert(message: "Prioridad inválida. Usa Alta, Media o Baja.")
                 return
             }
 
@@ -181,7 +181,7 @@ final class TaskListViewController: UIViewController {
     }
 
     private func presentValidationAlert(message: String) {
-        let alert = UIAlertController(title: "Datos invalidos", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Datos inválidos", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Entendido", style: .default))
         present(alert, animated: true)
     }

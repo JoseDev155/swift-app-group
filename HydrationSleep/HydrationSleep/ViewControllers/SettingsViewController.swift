@@ -106,20 +106,20 @@ final class SettingsViewController: UIViewController {
         let sleepGoalText = String(format: "%.1f", sleepGoal)
         let sleepTotalText = String(format: "%.1f", sleepTotal)
         let sleepSubtitle = "Meta diaria: \(sleepGoalText) h"
-        sleepSummaryView.configure(title: "Sueno de hoy", value: "\(sleepTotalText) h", subtitle: sleepSubtitle, progress: viewModel.sleepProgress)
+        sleepSummaryView.configure(title: "Sueño de hoy", value: "\(sleepTotalText) h", subtitle: sleepSubtitle, progress: viewModel.sleepProgress)
 
         let hydrationLines = viewModel.hydrationSummaryLines(limit: 5)
         if hydrationLines.isEmpty {
-            hydrationDetailLabel.text = "Agua por dia: sin registros."
+            hydrationDetailLabel.text = "Agua por día: sin registros."
         } else {
-            hydrationDetailLabel.text = "Agua por dia:\n" + hydrationLines.joined(separator: "\n")
+            hydrationDetailLabel.text = "Agua por día:\n" + hydrationLines.joined(separator: "\n")
         }
 
         let sleepLines = viewModel.sleepSummaryLines(limit: 5)
         if sleepLines.isEmpty {
-            sleepDetailLabel.text = "Sueno por dia: sin registros."
+            sleepDetailLabel.text = "Sueño por día: sin registros."
         } else {
-            sleepDetailLabel.text = "Sueno por dia:\n" + sleepLines.joined(separator: "\n")
+            sleepDetailLabel.text = "Sueño por día:\n" + sleepLines.joined(separator: "\n")
         }
 
         qualityDetailLabel.text = viewModel.qualitySummaryLine()
@@ -137,7 +137,7 @@ final class SettingsViewController: UIViewController {
             textField.text = "\(self.viewModel.hydrationGoalMl)"
         }
         alert.addTextField { textField in
-            textField.placeholder = "Meta de sueno (horas)"
+            textField.placeholder = "Meta de sueño (horas)"
             textField.keyboardType = .decimalPad
             textField.text = String(format: "%.1f", self.viewModel.sleepGoalHours)
         }
@@ -149,12 +149,12 @@ final class SettingsViewController: UIViewController {
             let normalizedSleep = sleepText.replacingOccurrences(of: ",", with: ".")
 
             guard let hydrationGoal = Int(hydrationText), hydrationGoal > 0 else {
-                self.presentValidationAlert(message: "Ingresa una meta valida para el agua.")
+                self.presentValidationAlert(message: "Ingresa una meta válida para el agua.")
                 return
             }
 
             guard let sleepGoal = Double(normalizedSleep), sleepGoal > 0 else {
-                self.presentValidationAlert(message: "Ingresa una meta valida para el sueno.")
+                self.presentValidationAlert(message: "Ingresa una meta válida para el sueño.")
                 return
             }
 
@@ -167,7 +167,7 @@ final class SettingsViewController: UIViewController {
     }
 
     private func presentValidationAlert(message: String) {
-        let alert = UIAlertController(title: "Datos invalidos", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Datos inválidos", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Entendido", style: .default))
         present(alert, animated: true)
     }

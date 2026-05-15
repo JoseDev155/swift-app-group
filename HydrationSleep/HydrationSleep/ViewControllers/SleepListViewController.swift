@@ -23,7 +23,7 @@ final class SleepListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Sueno"
+        title = "Sueño"
         view.backgroundColor = .systemBackground
         navigationItem.largeTitleDisplayMode = .always
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addEntry))
@@ -85,7 +85,7 @@ final class SleepListViewController: UIViewController {
         let totalText = String(format: "%.1f", total)
         let goalText = String(format: "%.1f", goal)
         let subtitle = "Meta diaria: \(goalText) h"
-        summaryView.configure(title: "Sueno de hoy", value: "\(totalText) h", subtitle: subtitle, progress: viewModel.progress)
+        summaryView.configure(title: "Sueño de hoy", value: "\(totalText) h", subtitle: subtitle, progress: viewModel.progress)
     }
 
     @objc private func handleDataChanged() {
@@ -103,10 +103,10 @@ final class SleepListViewController: UIViewController {
 
         switch context {
         case .new:
-            title = "Nuevo sueno"
+            title = "Nuevo sueño"
             entry = nil
         case .edit(let current):
-            title = "Editar sueno"
+            title = "Editar sueño"
             entry = current
         }
 
@@ -135,12 +135,12 @@ final class SleepListViewController: UIViewController {
             let normalizedHours = hoursText.replacingOccurrences(of: ",", with: ".")
 
             guard let hours = Double(normalizedHours), hours > 0 else {
-                self.presentValidationAlert(message: "Ingresa horas validas para el sueno.")
+                self.presentValidationAlert(message: "Ingresa horas válidas para el sueño.")
                 return
             }
 
             guard let quality = SleepQuality.fromInput(qualityText) else {
-                self.presentValidationAlert(message: "Selecciona una calidad valida: Baja, Media o Alta.")
+                self.presentValidationAlert(message: "Selecciona una calidad válida: Baja, Media o Alta.")
                 return
             }
 
@@ -159,7 +159,7 @@ final class SleepListViewController: UIViewController {
     private func confirmDelete(entry: SleepEntry) {
         let alert = UIAlertController(
             title: "Eliminar registro",
-            message: "Deseas eliminar este registro de sueno?",
+            message: "Deseas eliminar este registro de sueño?",
             preferredStyle: .alert
         )
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel))
@@ -170,7 +170,7 @@ final class SleepListViewController: UIViewController {
     }
 
     private func presentValidationAlert(message: String) {
-        let alert = UIAlertController(title: "Datos invalidos", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Datos inválidos", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Entendido", style: .default))
         present(alert, animated: true)
     }

@@ -26,7 +26,7 @@ MyMovieList es una app iOS para registrar películas por ver, ordenarlas y lleva
 ## Interacción
 - Botón "+" para agregar películas.
 - Desliza a la izquierda para editar o eliminar.
-- Boton "Editar" para activar el modo de borrado.
+- Botón "Editar" para activar el modo de borrado.
 - Alertas para validar datos.
 
 ## Ejecución

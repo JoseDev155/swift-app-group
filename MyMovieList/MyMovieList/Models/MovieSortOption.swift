@@ -14,7 +14,7 @@ enum MovieSortOption: String, Codable, CaseIterable {
     var title: String {
         switch self {
         case .title:
-            return "Titulo"
+            return "Título"
         case .recent:
             return "Recientes"
         }

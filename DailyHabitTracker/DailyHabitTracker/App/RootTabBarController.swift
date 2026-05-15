@@ -14,7 +14,7 @@ final class RootTabBarController: UITabBarController {
 
         let habitsViewController = UINavigationController(rootViewController: HabitsListViewController())
         habitsViewController.tabBarItem = UITabBarItem(
-            title: "Habitos",
+            title: "Hábitos",
             image: UIImage(systemName: "checklist"),
             tag: 0
         )
